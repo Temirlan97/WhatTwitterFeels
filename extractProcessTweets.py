@@ -2,15 +2,18 @@ import tweepy as tw
 import time
 import MySQLdb
 
-consumer_key = "N5R3atfOkOp3TS2JySlSzs5Hz"
-consumer_secret = "Q517Ja3Xb43NcCd08HOlui42VaY2kMQzrr4c5RuLXZZlKPaTTC"
+f = open("keyfile.txt", "r")
 
-access_token = "968869225820557315-0kXd718oUshKiim6Z7y5VUHJU0wxsFK"
-access_token_secret = "B1OuaTeL2VkOfJNMSdQMsFyZQnjvxV4C65bbAIrUULaaI"
+consumer_key = f.readline().strip()
+consumer_secret = f.readline().strip()
 
-auth = tw.OAuthHandler("N5R3atfOkOp3TS2JySlSzs5Hz", "Q517Ja3Xb43NcCd08HOlui42VaY2kMQzrr4c5RuLXZZlKPaTTC")
+access_token = f.readline().strip()
+access_token_secret = f.readline().strip()
+
+auth = tw.OAuthHandler(consumer_key, consumer_secret)
 auth.set_access_token(access_token, access_token_secret)
 api = tw.API(auth)
 
+print(api)
 
 
