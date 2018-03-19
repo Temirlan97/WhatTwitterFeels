@@ -11,7 +11,7 @@ Sentiment Analysis of Social Media Text. Eighth International Conference on
 Weblogs and Social Media (ICWSM-14). Ann Arbor, MI, June 2014.
 """
 
-import math, re, string, requests, json
+import math, re, string, requests, json, io
 from itertools import product
 from inspect import getsourcefile
 from os.path import abspath, join, dirname
@@ -195,7 +195,7 @@ class SentimentIntensityAnalyzer(object):
     def __init__(self, lexicon_file="vader_lexicon.txt"):
         _this_module_file_path_ = abspath(getsourcefile(lambda:0))
         lexicon_full_filepath = join(dirname(_this_module_file_path_), lexicon_file)
-        with open(lexicon_full_filepath, encoding='utf-8') as f:
+        with io.open(lexicon_full_filepath, encoding='utf-8') as f:
             self.lexicon_full_filepath = f.read()
         self.lexicon = self.make_lex_dict()
 
