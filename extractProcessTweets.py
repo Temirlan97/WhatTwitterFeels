@@ -1,6 +1,7 @@
 import tweepy as tw
 import time
 import MySQLdb
+import Queue
 
 keyfile = open("keyfile.txt", "r")
 
@@ -25,6 +26,26 @@ db = MySQLdb.connect(host = mysqlHost, user = mysqlUser, passwd = mysqlPass, db 
 insertQuery = "INSERT INTO twitter.tweets(user_id, timestamp, tweet_id, score)" \
 	"VALUES(%s,%s,%s,%s)"
 
+statusQueue = Queue.Queue()
+
+class TweetListenerAndWriter(tw.StreamListener):
+
+	def on_status(self, status):
+		statusQueue.put(status)
+
+	def on_error(self, status_code):
+		print("Program encountered an error " + status_code)
+		if status_code == 420:
+			return False
+
+
+
+myListener = TweetListenerAndWriter()
+myStream = tw.Stream(auth = api.auth, listener = myListener)
+
+myStream.filter(track=['BTC', 'Bitcoin', 'bitcoin', 'btc'], async = True)
+
+
 import sys
 
 sys.path.append("./vaderSentiment/vaderSentiment/")
@@ -33,26 +54,23 @@ import vaderSentiment as vader
 
 analyzer = vader.SentimentIntensityAnalyzer()
 
-class TweetListenerAndWriter(tw.StreamListener):
-
-	def on_status(self, status):
-		score = analyzer.polarity_scores(status.text)['compound']
-		if(score != 0.0):
-			try:
-				cursor = db.cursor()
-				print(str(score) + status.text)
+while(True):
+	status = statusQueue.get()
+	cursor = db.cursor()
+	count = 1;
+	try:
+		while(True):
+			score = analyzer.polarity_scores(status.text)['compound']
+			if(score != 0.0):
 				args = (int(status.user.id), status.timestamp_ms, int(status.id), float(score))
 				cursor.execute(insertQuery, args)
-				db.commit()
-			except MySQLdb.Error as error:
-				print(error)
-			finally:
-				cursor.close()
-
-
-
-myListener = TweetListenerAndWriter()
-myStream = tw.Stream(auth = api.auth, listener = myListener)
-
-myStream.filter(track=['BTC', 'Bitcoin', 'bitcoin', 'btc'], async = True)
+			if statusQueue.empty():
+				break;
+			count += 1
+		db.commit()
+		print("Commiting " + str(count) + " items to the DB")
+	except MySQLdb.Error as error:
+		print(error)
+	finally:
+		cursor.close()
 
