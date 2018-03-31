@@ -3,6 +3,23 @@ import time
 import MySQLdb
 import Queue
 
+
+def Log(output, filename):
+	#First prepare the output
+	readyOutput = str(time.asctime(time.localtime())) + ":\n"
+	for line in str(output).split("\n"):
+		readyOutput += "\t" + line + "\n"
+	#then print and write to the file
+	print(readyOutput)
+	with open(filename, "a") as logfile:
+		logfile.write(readyOutput)
+
+def errorLog(output):
+	Log(output, "errorlog.txt");
+
+def infoLog(output):
+	Log(output, "infolog.txt");
+
 keyfile = open("keyfile.txt", "r")
 
 consumer_key = keyfile.readline().strip()
@@ -24,7 +41,7 @@ api = tw.API(auth)
 
 db = MySQLdb.connect(host = mysqlHost, user = mysqlUser, passwd = mysqlPass, db = mysqlSchema, port = 3306)
 insertQuery = "INSERT INTO twitter.tweets(user_id, timestamp, tweet_id, score)" \
-	"VALUES(%s,%s,%s,%s)"
+	"VALUES(%s,%s,%s,%s) ON DUPLICATE KEY UPDATE user_id=user_id;"
 
 statusQueue = Queue.Queue()
 
@@ -34,7 +51,7 @@ class TweetListenerAndWriter(tw.StreamListener):
 		statusQueue.put(status)
 
 	def on_error(self, status_code):
-		print("Program encountered an error " + str(status_code))
+		errorLog("Program encountered an error " + str(status_code))
 		if status_code == 420:
 			return False
 
@@ -66,10 +83,13 @@ while(True):
 				cursor.execute(insertQuery, args)
 			count += 1
 		db.commit()
-		print(str(time.asctime(time.localtime())) + ": Committing " + str(count) + " items to the DB")
-		print(str(statusQueue.qsize()) + " more items waiting in the queue");
+		infoLog("Committing " + str(count) + " items to the DB.\n" + 
+			str(statusQueue.qsize()) + " more items waiting in the queue")
 	except MySQLdb.Error as error:
-		print(error)
+		errorLog(error)
 	finally:
 		cursor.close()
+
+db.close()
+
 
