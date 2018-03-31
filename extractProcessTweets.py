@@ -34,7 +34,7 @@ class TweetListenerAndWriter(tw.StreamListener):
 		statusQueue.put(status)
 
 	def on_error(self, status_code):
-		print("Program encountered an error " + status_code)
+		print("Program encountered an error " + str(status_code))
 		if status_code == 420:
 			return False
 
@@ -53,22 +53,21 @@ sys.path.append("./vaderSentiment/vaderSentiment/")
 import vaderSentiment as vader
 
 analyzer = vader.SentimentIntensityAnalyzer()
-
+STATUS_BUFFER_SIZE = 100
 while(True):
-	status = statusQueue.get()
 	cursor = db.cursor()
 	count = 1;
 	try:
-		while(True):
+		while(count < STATUS_BUFFER_SIZE):
+			status = statusQueue.get()
 			score = analyzer.polarity_scores(status.text)['compound']
 			if(score != 0.0):
 				args = (int(status.user.id), status.timestamp_ms, int(status.id), float(score))
 				cursor.execute(insertQuery, args)
-			if statusQueue.empty():
-				break;
 			count += 1
 		db.commit()
-		print("Commiting " + str(count) + " items to the DB")
+		print(str(time.asctime(time.localtime())) + ": Committing " + str(count) + " items to the DB")
+		print(str(statusQueue.qsize()) + " more items waiting in the queue");
 	except MySQLdb.Error as error:
 		print(error)
 	finally:
