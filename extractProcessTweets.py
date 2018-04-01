@@ -42,6 +42,8 @@ api = tw.API(auth)
 db = MySQLdb.connect(host = mysqlHost, user = mysqlUser, passwd = mysqlPass, db = mysqlSchema, port = 3306)
 insertQuery = "INSERT INTO twitter.tweets(user_id, timestamp, tweet_id, score)" \
 	"VALUES(%s,%s,%s,%s) ON DUPLICATE KEY UPDATE user_id=user_id;"
+insertUserQuery = "INSERT INTO twitter.users (user_id)" \
+	"SELECT %s FROM dual WHERE NOT EXISTS (SELECT * FROM twitter.users WHERE user_id = %s);"
 
 statusQueue = Queue.Queue()
 
@@ -73,7 +75,7 @@ analyzer = vader.SentimentIntensityAnalyzer()
 STATUS_BUFFER_SIZE = 100
 while(True):
 	cursor = db.cursor()
-	count = 1;
+	count = 0;
 	try:
 		while(count < STATUS_BUFFER_SIZE):
 			status = statusQueue.get()
@@ -81,6 +83,7 @@ while(True):
 			if(score != 0.0):
 				args = (int(status.user.id), status.timestamp_ms, int(status.id), float(score))
 				cursor.execute(insertQuery, args)
+				cursor.execute(insertUserQuery, (int(status.user.id), int(status.user.id)))
 			count += 1
 		db.commit()
 		infoLog("Committing " + str(count) + " items to the DB.\n" + 
