@@ -3,7 +3,9 @@ import time
 import MySQLdb
 import Queue
 
-
+#################################
+# LOGGING						
+#################################
 def Log(output, filename):
 	#First prepare the output
 	readyOutput = str(time.asctime(time.localtime())) + ":\n"
@@ -20,6 +22,10 @@ def errorLog(output):
 def infoLog(output):
 	Log(output, "infolog.txt");
 
+
+#################################
+# READING OUT KEYS						
+#################################
 keyfile = open("keyfile.txt", "r")
 
 consumer_key = keyfile.readline().strip()
@@ -35,16 +41,16 @@ mysqlSchema = keyfile.readline().strip()
 
 keyfile.close()
 
+#################################
+# TWITTER AUTHORIZATION						
+#################################
 auth = tw.OAuthHandler(consumer_key, consumer_secret)
 auth.set_access_token(access_token, access_token_secret)
 api = tw.API(auth)
 
-db = MySQLdb.connect(host = mysqlHost, user = mysqlUser, passwd = mysqlPass, db = mysqlSchema, port = 3306)
-insertQuery = "INSERT INTO twitter.tweets(user_id, timestamp, tweet_id, score)" \
-	"VALUES(%s,%s,%s,%s) ON DUPLICATE KEY UPDATE user_id=user_id;"
-insertUserQuery = "INSERT INTO twitter.users (user_id)" \
-	"SELECT %s FROM dual WHERE NOT EXISTS (SELECT * FROM twitter.users WHERE user_id = %s);"
-
+#################################
+# TWEETS STREAMING						
+#################################
 statusQueue = Queue.Queue()
 
 class TweetListenerAndWriter(tw.StreamListener):
@@ -62,9 +68,12 @@ class TweetListenerAndWriter(tw.StreamListener):
 myListener = TweetListenerAndWriter()
 myStream = tw.Stream(auth = api.auth, listener = myListener)
 
-myStream.filter(track=['BTC', 'Bitcoin', 'bitcoin', 'btc'], async = True)
+myStream.filter(track=['BTC', 'Bitcoin', 'bitcoin', 'btc', "BITCOIN"], async = True)
 
 
+#################################
+# STORING PROCESSED TWEETS					
+#################################
 import sys
 
 sys.path.append("./vaderSentiment/vaderSentiment/")
@@ -72,6 +81,12 @@ sys.path.append("./vaderSentiment/vaderSentiment/")
 import vaderSentiment as vader
 
 analyzer = vader.SentimentIntensityAnalyzer()
+
+db = MySQLdb.connect(host = mysqlHost, user = mysqlUser, passwd = mysqlPass, db = mysqlSchema, port = 3306)
+insertQuery = "INSERT INTO twitter.tweets(user_id, timestamp, tweet_id, score)" \
+	"VALUES(%s,%s,%s,%s) ON DUPLICATE KEY UPDATE user_id=user_id;"
+insertUserQuery = "INSERT INTO twitter.users (user_id)" \
+	"SELECT %s FROM dual WHERE NOT EXISTS (SELECT * FROM twitter.users WHERE user_id = %s);"
 STATUS_BUFFER_SIZE = 100
 while(True):
 	cursor = db.cursor()
