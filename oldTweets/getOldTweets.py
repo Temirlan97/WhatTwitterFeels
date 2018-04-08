@@ -9,7 +9,7 @@ import got
 # Importing myutils					
 #################################
 import sys
-sys.path.append("./myutils/")
+sys.path.append("../myutils/")
 from log import errorLog, infoLog
 from sendEmail import notifyViaEmail
 
