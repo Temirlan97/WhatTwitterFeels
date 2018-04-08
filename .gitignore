@@ -1,5 +1,7 @@
 keyfile.txt
+mailconfigs.txt
 *.pyc
 infolog.txt
 errorlog.txt
 old_tweets.csv
+*.csv

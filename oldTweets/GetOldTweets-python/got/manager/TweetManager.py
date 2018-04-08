@@ -23,6 +23,7 @@ class TweetManager:
 		while active:
 			json = TweetManager.getJsonReponse(tweetCriteria, refreshCursor, cookieJar, proxy)
 			if len(json['items_html'].strip()) == 0:
+				print("-----> Breaking because string is empty after stripping")
 				break
 
 			refreshCursor = json['min_position']
@@ -32,6 +33,7 @@ class TweetManager:
 			tweets = scrapedTweets('div.js-stream-tweet')
 			
 			if len(tweets) == 0:
+				print("-----> Breaking because no tweets were found")
 				break
 			
 			for tweetHTML in tweets:
@@ -129,8 +131,10 @@ class TweetManager:
 			response = opener.open(url)
 			jsonResponse = response.read()
 		except:
-			print "Twitter weird response. Try to see on browser: https://twitter.com/search?q=%s&src=typd" % urllib.quote(urlGetData)
-			sys.exit()
+			errorMsg = "Twitter weird response. Try to see on browser: https://twitter.com/search?q=%s&src=typd" % urllib.quote(urlGetData)
+			#print errorMsg
+			#sys.exit()
+			raise Exception(errorMsg)
 			return
 		
 		dataJson = json.loads(jsonResponse)
