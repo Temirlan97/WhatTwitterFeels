@@ -32,7 +32,7 @@ numberOfDays = 7
 
 outputFile = codecs.open(outputFileName, "w", "utf-8")
 
-outputFile.write("\nusername;date;text;id")
+outputFile.write("username;date;text;id")
 
 totalExtracted = 0
 

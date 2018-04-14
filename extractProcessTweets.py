@@ -1,5 +1,4 @@
 import tweepy as tw
-import time
 import MySQLdb
 import Queue
 
@@ -55,7 +54,6 @@ except Exception as error:
 #################################
 # STORING PROCESSED TWEETS					
 #################################
-import sys
 
 sys.path.append("./vaderSentiment/vaderSentiment/")
 
