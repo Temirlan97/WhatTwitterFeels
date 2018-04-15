@@ -1,3 +1,5 @@
+# This program processes and saves tweets without checking them
+# with Twitter's official API
 import io
 import csv
 from threading import Thread
@@ -44,17 +46,17 @@ def consumeTweetsTest():
 		except Queue.Empty:
 			pass
 
-processedAndWrote = 0
 def processTweetsIntoFile():
+	processedAndWrote = 0
 	with open("processedTweets.csv", "w") as outputCSV:
 		outputCSV.write("userid;timestamp;tweetid;score")
 		currentProcessed = 0
-		while not doneReading:
+		while (not doneReading) or (not statusQueue.empty()):
 			try:
 				status = statusQueue.get(True, 5)
-				score = analyzer.polarity_scores(status.text)['compound']
-				timestamp_ms = (status.created_at - datetime.datetime.utcfromtimestamp(0)).total_seconds() * 1000.0
-				args = (int(status.user.id), timestamp_ms, int(status.id), float(score))
+				score = analyzer.polarity_scores(status['text'])['compound']
+				timestamp_ms = (status['created_at'] - datetime.datetime.utcfromtimestamp(0)).total_seconds() * 1000.0
+				args = (status['userid'], timestamp_ms, int(status['id']), float(score))
 				outputCSV.write("\n%s;%s;%s;%s" % args)
 				currentProcessed += 1
 				if(currentProcessed >= 10000):
@@ -76,24 +78,26 @@ try:
 		reader = csv.reader(csvFile, delimiter = ';')
 		reader.next()
 		currentQueued = 0
+		invalidRows = 0
 		for row in reader:
-			#try getting it from twitter using the status id
-			try:
-				status = api.get_status(row[3])
-				if status:
-					statusQueue.put(status)
-					currentQueued += 1
-					if(currentQueued >= 10000):
-						readAndQueued += currentQueued
-						currentQueued = 0
-						info("Queued " + str(readAndQueued))
-			except Exception as error:
-				errorLog(error)
-				infoLog("Sleeping for 60 secs")
-				time.sleep(60)
-
+			if(len(row) != 4):
+				invalidRows += 1
+				errorLog("Invalid rows: " + str(invalidRows))
+				continue
+			status = {
+				'userid': row[0],
+				'created_at': datetime.datetime.strptime(row[1], "%Y-%m-%d %H:%M"),
+				'text': row[2],
+				'id': row[3]
+			}
+			statusQueue.put(status)
+			currentQueued += 1
+			if(currentQueued >= 10000):
+				readAndQueued += currentQueued
+				currentQueued = 0
+				infoLog("Queued " + str(readAndQueued))
 except Exception as error:
-	terminationMessage = (str(error))
+	terminationMessage = ("Reading failed: " + str(error))
 	errorLog(terminationMessage)
 	notifyViaEmail("Process old tweets crashed",  terminationMessage)
 finally:
@@ -101,7 +105,7 @@ finally:
 infoLog("------------------> Done reading.")
 processThread.join()
 infoLog("DONE!")
-infoLog("Process Old Tweets done", "The process has terminated normally")
+#notifyViaEmail("Process Old Tweets done", "The process has terminated normally")
 
 
 
