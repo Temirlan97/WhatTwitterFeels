@@ -21,7 +21,7 @@ while True:
 		timestamp = str(int(time.time()))
 		infoLog(price +" "+ timestamp)
 		cursor = db.cursor()
-		cursor.execute(insertQuery, (price, timestamp))
+		cursor.execute(insertQuery, (timestamp, price))
 		db.commit()
 		cursor.close()
 		time.sleep(60)
