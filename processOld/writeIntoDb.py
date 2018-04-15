@@ -30,11 +30,12 @@ try:
 					infoLog(count)
 		db.commit()
 		cursor.close()
+	notifyViaEmail("Writing Old tweets finished", "Terminated Normally")
 except Exception as error:
+	errorLog(error)
 	notifyViaEmail("CRASHED Writing Old tweets into DB", str(error))
 finally:
 	db.close()
-notifyViaEmail("Writing Old tweets finished", "Terminated Normally")
 
 
 
