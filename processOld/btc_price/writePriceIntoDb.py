@@ -19,7 +19,7 @@ try:
 	totalCount = 0
 	for index, row in csvFile.iterrows():
 		#Timestamp,Open,High,Low,Close,Volume_(BTC),Volume_(Currency),Weighted_Price
-		args = (int(row['Timestamp']), int(float(row['Weighted_Price'])*100.0))
+		args = (int(row['Timestamp']), int(float(row['Close'])*100.0))
 		count += 1
 		cursor.execute(insertQuery, args)
 		if(count >= 1000):
