@@ -13,16 +13,13 @@ db = MySQLdb.connect(host = configs['mysqlHost'], user = configs['mysqlUser'], p
 insertQuery = "INSERT INTO twitter.btc_price(timestamp, btc_spot_price)" \
 	"VALUES(%s,%s) ON DUPLICATE KEY UPDATE btc_spot_price=btc_spot_price;"
 try:
-	colnames=['Timestamp', 'PriceUSD', 'Smth else idk']
-	csvFile = pd.read_csv("coinbaseUSD.csv", names=colnames)
+	csvFile = pd.read_csv("reduced.csv")
 	cursor = db.cursor()
 	count = 0
 	totalCount = 0
 	for index, row in csvFile.iterrows():
-		#to reduce the data. For now we don't need much, since we don't have old tweets anyways
-		if(int(row['Timestamp']) < 1514806792):
+		if(index == 0):
 			continue
-		#Timestamp,Open,High,Low,Close,Volume_(BTC),Volume_(Currency),Weighted_Price
 		args = (int(row['Timestamp']), int(float(row['PriceUSD'])*100.0))
 		count += 1
 		cursor.execute(insertQuery, args)
