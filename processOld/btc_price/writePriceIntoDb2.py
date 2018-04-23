@@ -19,7 +19,7 @@ try:
 	count = 0
 	totalCount = 0
 	for index, row in csvFile.iterrows():
-		to reduce the data. For now we don't need much, since we don't have old tweets anyways
+		#to reduce the data. For now we don't need much, since we don't have old tweets anyways
 		if(int(row['Timestamp']) < 1514806792):
 			continue
 		#Timestamp,Open,High,Low,Close,Volume_(BTC),Volume_(Currency),Weighted_Price
