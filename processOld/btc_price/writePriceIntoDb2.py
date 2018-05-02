@@ -20,7 +20,7 @@ try:
 	for index, row in csvFile.iterrows():
 		if(index == 0):
 			continue
-		args = (int(row['Timestamp']), int(float(row['PriceUSD'])*100.0))
+		args = (int(row['Timestamp']), int(row['PriceUSD']))
 		count += 1
 		cursor.execute(insertQuery, args)
 		if(count >= 1000):

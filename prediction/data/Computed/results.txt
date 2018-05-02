@@ -1,0 +1,1297 @@
+data/Computed/Long/FramewiseRandom/
+(197, 261)
+[1m-1h]With prices and tweets
+Mean error: 0.7281725345318257
+Side accuracy: 53.9447646907%
+
+
+(197, 60)
+[1m-1h]With prices
+Mean error: 0.39908687756865535
+Side accuracy: 52.0433622989%
+
+
+(197, 201)
+[1m-1h]With tweets
+Mean error: 0.6128544536156494
+Side accuracy: 51.9831368838%
+
+
+(192, 213)
+[5m-1h]With prices and tweets
+Mean error: 0.6380112740735265
+Side accuracy: 51.7518939394%
+
+
+(192, 12)
+[5m-1h]With prices
+Mean error: 0.3639314548546822
+Side accuracy: 47.5852272727%
+
+
+(192, 201)
+[5m-1h]With tweets
+Mean error: 0.6042859518975165
+Side accuracy: 52.0359848485%
+
+
+(8, 225)
+[1h-1d]With prices and tweets
+Mean error: 2.230686570120648
+Side accuracy: 56.5217391304%
+
+
+(8, 24)
+[1h-1d]With prices
+Mean error: 7.375532321355338
+Side accuracy: 38.0434782609%
+
+
+(8, 201)
+[1h-1d]With tweets
+Mean error: 2.9453679731914955
+Side accuracy: 52.7173913043%
+
+
+(1, 207)
+[12h-3d]With prices and tweets
+Mean error: 2.29762086977998
+Side accuracy: 100.0%
+
+
+(1, 6)
+[12h-3d]With prices
+Mean error: 2.113612317226624
+Side accuracy: 100.0%
+
+
+(1, 201)
+[12h-3d]With tweets
+Mean error: 2.781320742006484
+Side accuracy: 80.0%
+
+
+(1, 215)
+[12h-7d]With prices and tweets
+Mean error: 7.116973974923725
+Side accuracy: 53.8461538462%
+
+
+(1, 14)
+[12h-7d]With prices
+Mean error: 6.9005491818363085
+Side accuracy: 38.4615384615%
+
+
+(1, 201)
+[12h-7d]With tweets
+Mean error: 5.254131967963612
+Side accuracy: 92.3076923077%
+
+
+(1, 208)
+[1d-7d]With prices and tweets
+Mean error: 5.575712714657629
+Side accuracy: 66.6666666667%
+
+
+(1, 7)
+[1d-7d]With prices
+Mean error: 6.021200444708077
+Side accuracy: 66.6666666667%
+
+
+(1, 201)
+[1d-7d]With tweets
+Mean error: 4.180093563851967
+Side accuracy: 100.0%
+
+data/Computed/Long/FramewiseFrame/
+(142, 261)
+[1m-1h]With prices and tweets
+Mean error: 1.0458965169648813
+Side accuracy: 49.2957746479%
+
+
+(142, 60)
+[1m-1h]With prices
+Mean error: 0.5015662615730319
+Side accuracy: 47.6247314395%
+
+
+(142, 201)
+[1m-1h]With tweets
+Mean error: 0.8047470409022784
+Side accuracy: 49.7851515875%
+
+
+(142, 213)
+[5m-1h]With prices and tweets
+Mean error: 0.7956137839935555
+Side accuracy: 49.4878361076%
+
+
+(142, 12)
+[5m-1h]With prices
+Mean error: 0.40037729465853156
+Side accuracy: 48.5915492958%
+
+
+(142, 201)
+[5m-1h]With tweets
+Mean error: 0.756858966958206
+Side accuracy: 49.2957746479%
+
+
+(7, 225)
+[1h-1d]With prices and tweets
+Mean error: 2.704716444909947
+Side accuracy: 51.5527950311%
+
+
+(7, 24)
+[1h-1d]With prices
+Mean error: 6.966525149614521
+Side accuracy: 42.2360248447%
+
+
+(7, 201)
+[1h-1d]With tweets
+Mean error: 2.8433364277026993
+Side accuracy: 49.0683229814%
+
+
+(3, 207)
+[12h-3d]With prices and tweets
+Mean error: 7.436652775700685
+Side accuracy: 33.3333333333%
+
+
+(3, 6)
+[12h-3d]With prices
+Mean error: 18.95924775528693
+Side accuracy: 60.0%
+
+
+(3, 201)
+[12h-3d]With tweets
+Mean error: 6.770757836539756
+Side accuracy: 40.0%
+
+
+(1, 215)
+[12h-7d]With prices and tweets
+Mean error: 7.116973974923725
+Side accuracy: 53.8461538462%
+
+
+(1, 14)
+[12h-7d]With prices
+Mean error: 6.9005491818363085
+Side accuracy: 38.4615384615%
+
+
+(1, 201)
+[12h-7d]With tweets
+Mean error: 5.254131967963612
+Side accuracy: 92.3076923077%
+
+
+(1, 208)
+[1d-7d]With prices and tweets
+Mean error: 5.575712714657629
+Side accuracy: 66.6666666667%
+
+
+(1, 7)
+[1d-7d]With prices
+Mean error: 6.021200444708077
+Side accuracy: 66.6666666667%
+
+
+(1, 201)
+[1d-7d]With tweets
+Mean error: 4.180093563851967
+Side accuracy: 100.0%
+
+data/Computed/Long/FramewiseIntotwo/
+(210, 261)
+[1m-1h]With prices and tweets
+Mean error: 1.0326919534894805
+Side accuracy: 51.0976594027%
+
+
+(210, 60)
+[1m-1h]With prices
+Mean error: 0.42573205788028146
+Side accuracy: 52.792574657%
+
+
+(210, 201)
+[1m-1h]With tweets
+Mean error: 0.9151460917825042
+Side accuracy: 53.0185633575%
+
+
+(210, 213)
+[5m-1h]With prices and tweets
+Mean error: 0.8889485937296072
+Side accuracy: 53.0735930736%
+
+
+(210, 12)
+[5m-1h]With prices
+Mean error: 0.3484690672113368
+Side accuracy: 49.6103896104%
+
+
+(210, 201)
+[5m-1h]With tweets
+Mean error: 0.8726072313962857
+Side accuracy: 53.0735930736%
+
+
+(9, 225)
+[1h-1d]With prices and tweets
+Mean error: 2.08291643458623
+Side accuracy: 58.9371980676%
+
+
+(9, 24)
+[1h-1d]With prices
+Mean error: 6.757024073945997
+Side accuracy: 23.1884057971%
+
+
+(9, 201)
+[1h-1d]With tweets
+Mean error: 2.051434871030677
+Side accuracy: 55.5555555556%
+
+
+(2, 207)
+[12h-3d]With prices and tweets
+Mean error: 3.118032059871817
+Side accuracy: 60.0%
+
+
+(2, 6)
+[12h-3d]With prices
+Mean error: 9.250375579886413
+Side accuracy: 60.0%
+
+
+(2, 201)
+[12h-3d]With tweets
+Mean error: 3.9721690571052157
+Side accuracy: 60.0%
+
+
+(1, 215)
+[12h-7d]With prices and tweets
+Mean error: 3.136854582507606
+Side accuracy: 69.2307692308%
+
+
+(1, 14)
+[12h-7d]With prices
+Mean error: 2.0650230321813323
+Side accuracy: 69.2307692308%
+
+
+(1, 201)
+[12h-7d]With tweets
+Mean error: 4.906066615984086
+Side accuracy: 69.2307692308%
+
+
+(1, 208)
+[1d-7d]With prices and tweets
+Mean error: 3.1223750806867807
+Side accuracy: 66.6666666667%
+
+
+(1, 7)
+[1d-7d]With prices
+Mean error: 2.503445574009753
+Side accuracy: 33.3333333333%
+
+
+(1, 201)
+[1d-7d]With tweets
+Mean error: 4.428279204293018
+Side accuracy: 66.6666666667%
+
+data/Computed/Long/Into_two/
+(12587, 261)
+[1m-1h]With prices and tweets
+Mean error: 0.6479510727774194
+Side accuracy: 50.1348579985%
+
+
+(12587, 60)
+[1m-1h]With prices
+Mean error: 0.33937529554628804
+Side accuracy: 50.176332051%
+
+
+(12587, 201)
+[1m-1h]With tweets
+Mean error: 0.6444602850886539
+Side accuracy: 49.6211453033%
+
+
+(2517, 213)
+[5m-1h]With prices and tweets
+Mean error: 0.6012613654114229
+Side accuracy: 50.1137718063%
+
+
+(2517, 12)
+[5m-1h]With prices
+Mean error: 0.31872749463822775
+Side accuracy: 50.0198649186%
+
+
+(2517, 201)
+[5m-1h]With tweets
+Mean error: 0.6053783022495304
+Side accuracy: 49.6550727778%
+
+
+(197, 225)
+[1h-1d]With prices and tweets
+Mean error: 37.107217008664385
+Side accuracy: 48.1129993379%
+
+
+(197, 24)
+[1h-1d]With prices
+Mean error: 1.8471144114262386
+Side accuracy: 55.506510704%
+
+
+(197, 201)
+[1h-1d]With tweets
+Mean error: 33.86342657653085
+Side accuracy: 51.6662988303%
+
+
+(13, 207)
+[12h-3d]With prices and tweets
+Mean error: 6.1992717308767205
+Side accuracy: 52.3076923077%
+
+
+(13, 6)
+[12h-3d]With prices
+Mean error: 2.9601337467461453
+Side accuracy: 32.3076923077%
+
+
+(13, 201)
+[12h-3d]With tweets
+Mean error: 13.143099589312824
+Side accuracy: 43.0769230769%
+
+
+(5, 215)
+[12h-7d]With prices and tweets
+Mean error: 5.100135768992448
+Side accuracy: 67.6923076923%
+
+
+(5, 14)
+[12h-7d]With prices
+Mean error: 4.365382169905652
+Side accuracy: 53.8461538462%
+
+
+(5, 201)
+[12h-7d]With tweets
+Mean error: 6.532377641284727
+Side accuracy: 41.5384615385%
+
+
+(3, 208)
+[1d-7d]With prices and tweets
+Mean error: 11.483368058423435
+Side accuracy: 50.0%
+
+
+(3, 7)
+[1d-7d]With prices
+Mean error: 4.272886664247994
+Side accuracy: 55.5555555556%
+
+
+(3, 201)
+[1d-7d]With tweets
+Mean error: 5.5719052246778435
+Side accuracy: 83.3333333333%
+
+data/Computed/Long/Test_Frame/
+(8503, 261)
+[1m-1h]With prices and tweets
+Mean error: 0.7170188285645998
+Side accuracy: 50.6196217885%
+
+
+(8503, 60)
+[1m-1h]With prices
+Mean error: 0.38248227608678453
+Side accuracy: 48.9075640302%
+
+
+(8503, 201)
+[1m-1h]With tweets
+Mean error: 0.6539362676616838
+Side accuracy: 49.7943896172%
+
+
+(1700, 213)
+[5m-1h]With prices and tweets
+Mean error: 0.6626160009574338
+Side accuracy: 50.4598930481%
+
+
+(1700, 12)
+[5m-1h]With prices
+Mean error: 0.3643827917834864
+Side accuracy: 49.6951871658%
+
+
+(1700, 201)
+[5m-1h]With tweets
+Mean error: 0.614672729737485
+Side accuracy: 50.0374331551%
+
+
+(165, 225)
+[1h-1d]With prices and tweets
+Mean error: 26.64711976760234
+Side accuracy: 45.2700922266%
+
+
+(165, 24)
+[1h-1d]With prices
+Mean error: 2.022619976305368
+Side accuracy: 52.0158102767%
+
+
+(165, 201)
+[1h-1d]With tweets
+Mean error: 30.85950375497648
+Side accuracy: 54.4137022398%
+
+
+(14, 207)
+[12h-3d]With prices and tweets
+Mean error: 13.793853423694175
+Side accuracy: 45.7142857143%
+
+
+(14, 6)
+[12h-3d]With prices
+Mean error: 3.0639688883975666
+Side accuracy: 37.1428571429%
+
+
+(14, 201)
+[12h-3d]With tweets
+Mean error: 28.885458502768845
+Side accuracy: 51.4285714286%
+
+
+(6, 215)
+[12h-7d]With prices and tweets
+Mean error: 9.197044152601237
+Side accuracy: 64.1025641026%
+
+
+(6, 14)
+[12h-7d]With prices
+Mean error: 8.931751437548042
+Side accuracy: 43.5897435897%
+
+
+(6, 201)
+[12h-7d]With tweets
+Mean error: 9.237366246606504
+Side accuracy: 62.8205128205%
+
+
+(3, 208)
+[1d-7d]With prices and tweets
+Mean error: 8.095621338032846
+Side accuracy: 72.2222222222%
+
+
+(3, 7)
+[1d-7d]With prices
+Mean error: 6.765808257763762
+Side accuracy: 50.0%
+
+
+(3, 201)
+[1d-7d]With tweets
+Mean error: 8.405087709988221
+Side accuracy: 77.7777777778%
+
+data/Computed/Long/Random_Distribution/
+(11532, 261)
+[1m-1h]With prices and tweets
+Mean error: 0.34728295695064876
+Side accuracy: 58.931374451%
+
+
+(11532, 60)
+[1m-1h]With prices
+Mean error: 0.34151703626982477
+Side accuracy: 48.8491860527%
+
+
+(11532, 201)
+[1m-1h]With tweets
+Mean error: 0.3463776285876992
+Side accuracy: 57.8831490267%
+
+
+(2364, 213)
+[5m-1h]With prices and tweets
+Mean error: 0.3353960989733196
+Side accuracy: 57.371942778%
+
+
+(2364, 12)
+[5m-1h]With prices
+Mean error: 0.3155992717415727
+Side accuracy: 48.0156898939%
+
+
+(2364, 201)
+[5m-1h]With tweets
+Mean error: 0.33474426087962134
+Side accuracy: 56.5989847716%
+
+
+(214, 225)
+[1h-1d]With prices and tweets
+Mean error: 1.2742244383450982
+Side accuracy: 77.0012190167%
+
+
+(214, 24)
+[1h-1d]With prices
+Mean error: 2.0589881564310972
+Side accuracy: 46.017878911%
+
+
+(214, 201)
+[1h-1d]With tweets
+Mean error: 1.2874486852650833
+Side accuracy: 76.3307598537%
+
+
+(17, 207)
+[12h-3d]With prices and tweets
+Mean error: 3.683329600815429
+Side accuracy: 64.7058823529%
+
+
+(17, 6)
+[12h-3d]With prices
+Mean error: 4.340023843502306
+Side accuracy: 43.5294117647%
+
+
+(17, 201)
+[12h-3d]With tweets
+Mean error: 3.499086517513245
+Side accuracy: 65.8823529412%
+
+
+(7, 215)
+[12h-7d]With prices and tweets
+Mean error: 3.73276803078205
+Side accuracy: 93.4065934066%
+
+
+(7, 14)
+[12h-7d]With prices
+Mean error: 11.752256888095044
+Side accuracy: 48.3516483516%
+
+
+(7, 201)
+[12h-7d]With tweets
+Mean error: 4.1824514538734805
+Side accuracy: 95.6043956044%
+
+
+(5, 208)
+[1d-7d]With prices and tweets
+Mean error: 24.311421307308905
+Side accuracy: 46.6666666667%
+
+
+(5, 7)
+[1d-7d]With prices
+Mean error: 24.547912617273717
+Side accuracy: 40.0%
+
+
+(5, 201)
+[1d-7d]With tweets
+Mean error: 4.052276836033023
+Side accuracy: 70.0%
+
+data/Computed/Short/Random_Distribution/
+(11607, 101)
+[1m-1h]With prices and tweets
+Mean error: 0.348789137039519
+Side accuracy: 53.0322876464%
+
+
+(11607, 60)
+[1m-1h]With prices
+Mean error: 0.3424718623447922
+Side accuracy: 48.7941963719%
+
+
+(11607, 41)
+[1m-1h]With tweets
+Mean error: 0.3462904332936634
+Side accuracy: 53.2986377303%
+
+
+(2325, 53)
+[5m-1h]With prices and tweets
+Mean error: 0.32765528198159916
+Side accuracy: 52.8954056696%
+
+
+(2325, 12)
+[5m-1h]With prices
+Mean error: 0.32511936621808174
+Side accuracy: 49.7282502444%
+
+
+(2325, 41)
+[5m-1h]With tweets
+Mean error: 0.32682453217918356
+Side accuracy: 52.715542522%
+
+
+(188, 65)
+[1h-1d]With prices and tweets
+Mean error: 1.2528763370109357
+Side accuracy: 73.1267345051%
+
+
+(188, 24)
+[1h-1d]With prices
+Mean error: 1.9569334384395287
+Side accuracy: 49.7687326549%
+
+
+(188, 41)
+[1h-1d]With tweets
+Mean error: 1.366566328333834
+Side accuracy: 73.1267345051%
+
+
+(16, 47)
+[12h-3d]With prices and tweets
+Mean error: 6.961447446296892
+Side accuracy: 60.0%
+
+
+(16, 6)
+[12h-3d]With prices
+Mean error: 3.607862321358029
+Side accuracy: 37.5%
+
+
+(16, 41)
+[12h-3d]With tweets
+Mean error: 6.817963396665128
+Side accuracy: 56.25%
+
+
+(9, 55)
+[12h-7d]With prices and tweets
+Mean error: 5.83125383125917
+Side accuracy: 64.9572649573%
+
+
+(9, 14)
+[12h-7d]With prices
+Mean error: 12.669503062581885
+Side accuracy: 19.6581196581%
+
+
+(9, 41)
+[12h-7d]With tweets
+Mean error: 3.4807134346222175
+Side accuracy: 80.3418803419%
+
+
+(6, 48)
+[1d-7d]With prices and tweets
+Mean error: 10.989929160219155
+Side accuracy: 52.7777777778%
+
+
+(6, 7)
+[1d-7d]With prices
+Mean error: 17.18271589458193
+Side accuracy: 33.3333333333%
+
+
+(6, 41)
+[1d-7d]With tweets
+Mean error: 5.526419439316057
+Side accuracy: 80.5555555556%
+
+data/Computed/Short/Test_Frame/
+(8503, 101)
+[1m-1h]With prices and tweets
+Mean error: 0.4033734218570708
+Side accuracy: 52.6266900815%
+
+
+(8503, 60)
+[1m-1h]With prices
+Mean error: 0.3826146629814672
+Side accuracy: 48.9229125513%
+
+
+(8503, 41)
+[1m-1h]With tweets
+Mean error: 0.4026849245713476
+Side accuracy: 51.9760722537%
+
+
+(1700, 53)
+[5m-1h]With prices and tweets
+Mean error: 0.3834990311773244
+Side accuracy: 52.8877005348%
+
+
+(1700, 12)
+[5m-1h]With prices
+Mean error: 0.36447149170634524
+Side accuracy: 49.6684491979%
+
+
+(1700, 41)
+[5m-1h]With tweets
+Mean error: 0.3830136413766103
+Side accuracy: 52.2299465241%
+
+
+(165, 65)
+[1h-1d]With prices and tweets
+Mean error: 5.290107086628008
+Side accuracy: 49.8023715415%
+
+
+(165, 24)
+[1h-1d]With prices
+Mean error: 2.024199654679538
+Side accuracy: 52.3583662714%
+
+
+(165, 41)
+[1h-1d]With tweets
+Mean error: 7.4228842244896684
+Side accuracy: 45.4018445323%
+
+
+(14, 47)
+[12h-3d]With prices and tweets
+Mean error: 40.26896177664693
+Side accuracy: 54.2857142857%
+
+
+(14, 6)
+[12h-3d]With prices
+Mean error: 3.0639688883975666
+Side accuracy: 37.1428571429%
+
+
+(14, 41)
+[12h-3d]With tweets
+Mean error: 79.02552706049357
+Side accuracy: 61.4285714286%
+
+
+(6, 55)
+[12h-7d]With prices and tweets
+Mean error: 14.818320903076115
+Side accuracy: 60.2564102564%
+
+
+(6, 14)
+[12h-7d]With prices
+Mean error: 8.931751437548042
+Side accuracy: 43.5897435897%
+
+
+(6, 41)
+[12h-7d]With tweets
+Mean error: 21.333265088179544
+Side accuracy: 57.6923076923%
+
+
+(3, 48)
+[1d-7d]With prices and tweets
+Mean error: 9.061860322262357
+Side accuracy: 77.7777777778%
+
+
+(3, 7)
+[1d-7d]With prices
+Mean error: 6.765808257763762
+Side accuracy: 50.0%
+
+
+(3, 41)
+[1d-7d]With tweets
+Mean error: 11.374777666061842
+Side accuracy: 50.0%
+
+data/Computed/Short/Into_two/
+(12428, 101)
+[1m-1h]With prices and tweets
+Mean error: 0.4292783185167351
+Side accuracy: 54.7440716152%
+
+
+(12428, 60)
+[1m-1h]With prices
+Mean error: 0.33901369607258075
+Side accuracy: 50.3706774751%
+
+
+(12428, 41)
+[1m-1h]With tweets
+Mean error: 0.4278029920426353
+Side accuracy: 54.8192163131%
+
+
+(2486, 53)
+[5m-1h]With prices and tweets
+Mean error: 0.4048396392113611
+Side accuracy: 54.428435603%
+
+
+(2486, 12)
+[5m-1h]With prices
+Mean error: 0.31849115769430286
+Side accuracy: 50.073136839%
+
+
+(2486, 41)
+[5m-1h]With tweets
+Mean error: 0.4028529017973679
+Side accuracy: 54.3845534996%
+
+
+(194, 65)
+[1h-1d]With prices and tweets
+Mean error: 8.592106660419384
+Side accuracy: 52.2635589422%
+
+
+(194, 24)
+[1h-1d]With prices
+Mean error: 1.8407807737145425
+Side accuracy: 56.275212909%
+
+
+(194, 41)
+[1h-1d]With tweets
+Mean error: 7.753834310203998
+Side accuracy: 52.2187359928%
+
+
+(13, 47)
+[12h-3d]With prices and tweets
+Mean error: 23.694104027130063
+Side accuracy: 55.3846153846%
+
+
+(13, 6)
+[12h-3d]With prices
+Mean error: 2.9601337467461453
+Side accuracy: 32.3076923077%
+
+
+(13, 41)
+[12h-3d]With tweets
+Mean error: 60.411079449839065
+Side accuracy: 47.6923076923%
+
+
+(5, 55)
+[12h-7d]With prices and tweets
+Mean error: 10.915961339915716
+Side accuracy: 75.3846153846%
+
+
+(5, 14)
+[12h-7d]With prices
+Mean error: 4.365382169905652
+Side accuracy: 53.8461538462%
+
+
+(5, 41)
+[12h-7d]With tweets
+Mean error: 11.709678779830456
+Side accuracy: 72.3076923077%
+
+
+(3, 48)
+[1d-7d]With prices and tweets
+Mean error: 11.294402680290077
+Side accuracy: 44.4444444444%
+
+
+(3, 7)
+[1d-7d]With prices
+Mean error: 4.272886664247994
+Side accuracy: 55.5555555556%
+
+
+(3, 41)
+[1d-7d]With tweets
+Mean error: 5.437021989160062
+Side accuracy: 66.6666666667%
+
+data/Computed/Short/FramewiseRandom/
+(180, 101)
+[1m-1h]With prices and tweets
+Mean error: 0.4689753901511802
+Side accuracy: 52.9284369115%
+
+
+(180, 60)
+[1m-1h]With prices
+Mean error: 0.404852863089613
+Side accuracy: 50.7815442561%
+
+
+(180, 41)
+[1m-1h]With tweets
+Mean error: 0.4079608318973614
+Side accuracy: 52.1657250471%
+
+
+(208, 53)
+[5m-1h]With prices and tweets
+Mean error: 0.38681253470070387
+Side accuracy: 52.7534965035%
+
+
+(208, 12)
+[5m-1h]With prices
+Mean error: 0.33327950068660767
+Side accuracy: 45.8916083916%
+
+
+(208, 41)
+[5m-1h]With tweets
+Mean error: 0.3771884727212455
+Side accuracy: 53.5402097902%
+
+
+(12, 65)
+[1h-1d]With prices and tweets
+Mean error: 2.5981153293720394
+Side accuracy: 75.3623188406%
+
+
+(12, 24)
+[1h-1d]With prices
+Mean error: 5.30786481932579
+Side accuracy: 68.4782608696%
+
+
+(12, 41)
+[1h-1d]With tweets
+Mean error: 4.360236959313075
+Side accuracy: 74.6376811594%
+
+
+(3, 47)
+[12h-3d]With prices and tweets
+Mean error: 8.682446357127635
+Side accuracy: 26.6666666667%
+
+
+(3, 6)
+[12h-3d]With prices
+Mean error: 13.939073072499465
+Side accuracy: 13.3333333333%
+
+
+(3, 41)
+[12h-3d]With tweets
+Mean error: 2.601732746077078
+Side accuracy: 53.3333333333%
+
+
+(1, 55)
+[12h-7d]With prices and tweets
+Mean error: 6.910888139399953
+Side accuracy: 15.3846153846%
+
+
+(1, 14)
+[12h-7d]With prices
+Mean error: 4.887625572288884
+Side accuracy: 61.5384615385%
+
+
+(1, 41)
+[12h-7d]With tweets
+Mean error: 2.250340424651499
+Side accuracy: 92.3076923077%
+
+
+(2, 48)
+[1d-7d]With prices and tweets
+Mean error: 4.275830025975182
+Side accuracy: 58.3333333333%
+
+
+(2, 7)
+[1d-7d]With prices
+Mean error: 5.422956868716226
+Side accuracy: 41.6666666667%
+
+
+(2, 41)
+[1d-7d]With tweets
+Mean error: 4.194940863827594
+Side accuracy: 58.3333333333%
+
+data/Computed/Short/FramewiseIntotwo/
+(210, 101)
+[1m-1h]With prices and tweets
+Mean error: 0.5848825791528887
+Side accuracy: 55.9725585149%
+
+
+(210, 60)
+[1m-1h]With prices
+Mean error: 0.42573205788028146
+Side accuracy: 52.792574657%
+
+
+(210, 41)
+[1m-1h]With tweets
+Mean error: 0.5063472716110559
+Side accuracy: 55.9564164649%
+
+
+(210, 53)
+[5m-1h]With prices and tweets
+Mean error: 0.4945973258811734
+Side accuracy: 54.8917748918%
+
+
+(210, 12)
+[5m-1h]With prices
+Mean error: 0.3484690672113368
+Side accuracy: 49.6103896104%
+
+
+(210, 41)
+[5m-1h]With tweets
+Mean error: 0.47792897804462103
+Side accuracy: 56.2337662338%
+
+
+(9, 65)
+[1h-1d]With prices and tweets
+Mean error: 3.9799050829596676
+Side accuracy: 43.4782608696%
+
+
+(9, 24)
+[1h-1d]With prices
+Mean error: 6.757024073945997
+Side accuracy: 23.1884057971%
+
+
+(9, 41)
+[1h-1d]With tweets
+Mean error: 7.131070003446389
+Side accuracy: 50.7246376812%
+
+
+(2, 47)
+[12h-3d]With prices and tweets
+Mean error: 3.2479600353194966
+Side accuracy: 60.0%
+
+
+(2, 6)
+[12h-3d]With prices
+Mean error: 9.250375579886413
+Side accuracy: 60.0%
+
+
+(2, 41)
+[12h-3d]With tweets
+Mean error: 3.206978321831455
+Side accuracy: 60.0%
+
+
+(1, 55)
+[12h-7d]With prices and tweets
+Mean error: 4.032301450348415
+Side accuracy: 69.2307692308%
+
+
+(1, 14)
+[12h-7d]With prices
+Mean error: 2.0650230321813323
+Side accuracy: 69.2307692308%
+
+
+(1, 41)
+[12h-7d]With tweets
+Mean error: 4.18610448024837
+Side accuracy: 69.2307692308%
+
+
+(1, 48)
+[1d-7d]With prices and tweets
+Mean error: 3.885533094804652
+Side accuracy: 66.6666666667%
+
+
+(1, 7)
+[1d-7d]With prices
+Mean error: 2.503445574009753
+Side accuracy: 33.3333333333%
+
+
+(1, 41)
+[1d-7d]With tweets
+Mean error: 3.9427683941994722
+Side accuracy: 66.6666666667%
+
+data/Computed/Short/FramewiseFrame/
+(142, 101)
+[1m-1h]With prices and tweets
+Mean error: 0.5590870310409244
+Side accuracy: 51.730723323%
+
+
+(142, 60)
+[1m-1h]With prices
+Mean error: 0.5036071427359642
+Side accuracy: 47.4218190499%
+
+
+(142, 41)
+[1m-1h]With tweets
+Mean error: 0.49195842404005824
+Side accuracy: 49.1883504416%
+
+
+(142, 53)
+[5m-1h]With prices and tweets
+Mean error: 0.48381031559381465
+Side accuracy: 47.9513444302%
+
+
+(142, 12)
+[5m-1h]With prices
+Mean error: 0.4006035909246434
+Side accuracy: 48.6555697823%
+
+
+(142, 41)
+[5m-1h]With tweets
+Mean error: 0.47154213193207073
+Side accuracy: 48.6555697823%
+
+
+(7, 65)
+[1h-1d]With prices and tweets
+Mean error: 2.6977872147756368
+Side accuracy: 64.5962732919%
+
+
+(7, 24)
+[1h-1d]With prices
+Mean error: 6.966525149614521
+Side accuracy: 42.2360248447%
+
+
+(7, 41)
+[1h-1d]With tweets
+Mean error: 6.116871357424678
+Side accuracy: 56.5217391304%
+
+
+(3, 47)
+[12h-3d]With prices and tweets
+Mean error: 7.6681600545984185
+Side accuracy: 33.3333333333%
+
+
+(3, 6)
+[12h-3d]With prices
+Mean error: 18.95924775528693
+Side accuracy: 60.0%
+
+
+(3, 41)
+[12h-3d]With tweets
+Mean error: 6.745182232380845
+Side accuracy: 40.0%
+
+
+(1, 55)
+[12h-7d]With prices and tweets
+Mean error: 7.417780896448137
+Side accuracy: 53.8461538462%
+
+
+(1, 14)
+[12h-7d]With prices
+Mean error: 6.9005491818363085
+Side accuracy: 38.4615384615%
+
+
+(1, 41)
+[12h-7d]With tweets
+Mean error: 4.9654563821181075
+Side accuracy: 92.3076923077%
+
+
+(1, 48)
+[1d-7d]With prices and tweets
+Mean error: 5.918013643792416
+Side accuracy: 66.6666666667%
+
+
+(1, 7)
+[1d-7d]With prices
+Mean error: 6.021200444708077
+Side accuracy: 66.6666666667%
+
+
+(1, 41)
+[1d-7d]With tweets
+Mean error: 3.884676232865654
+Side accuracy: 100.0%
+
+
