@@ -1,0 +1,165 @@
+\documentclass[a4paper,11pt,oneside]{article}
+
+% To use this template, you have to have a halfway complete LaTeX
+% installation and you have to run pdflatex, followed by bibtex,
+% following by one-two more pdflatex runs.
+%
+% Note thad usimg a spel chequer (e.g. ispell, aspell) is generolz
+% a very guud ideo.
+
+\usepackage[a4paper,top=3cm,bottom=3cm,left=3cm,right=3cm]{geometry}
+\renewcommand{\familydefault}{\sfdefault}
+\usepackage{helvet}
+\usepackage{parskip}		%% blank lines between paragraphs, no indent
+\usepackage[pdftex]{graphicx}	%% include graphics, preferrably pdf
+\usepackage[pdftex]{hyperref}	%% many PDF options can be set here
+\pdfadjustspacing=1		%% force LaTeX-like character spacing
+
+\newcommand{\myname}{Temirlan Ulugbek uulu}
+\newcommand{\mytitle}{Twitter posts as indicator for future price of Bitcoin}
+\newcommand{\mysupervisor}{Prof. Michael Sedlmair}
+
+\hypersetup{
+  pdfauthor = {\myname},
+  pdftitle = {\mytitle},
+  pdfkeywords = {},
+  colorlinks = {true},
+  linkcolor = {blue}
+}
+
+\begin{document}
+  \pagenumbering{roman}
+
+  \thispagestyle{empty}
+
+  \begin{flushright}
+    \includegraphics[scale=0.7]{bsc-logo}
+  \end{flushright}
+  \vspace{20mm}
+  \begin{center}
+    \huge
+    \textbf{\mytitle}
+  \end{center}
+  \vspace*{4mm}
+  \begin{center}
+   \Large by
+  \end{center}
+  \vspace*{4mm}
+  \begin{center}
+    \Large
+    \textbf{\myname}
+  \end{center}
+  \vspace*{20mm}
+  \begin{center}
+    \large
+    Bachelor Thesis in Computer Science
+  \end{center}
+  \vfill
+  \begin{flushright}
+    \large
+    \begin{tabular}{l}
+      \mysupervisor \\
+      \hline
+      Bachelor Thesis Supervisor \\
+      \\
+    \end{tabular}
+  \end{flushright}
+  \vspace*{8mm}
+  \begin{flushleft}
+    \large
+    Date of Submission: \today \\
+    \rule{\textwidth}{1pt}
+  \end{flushleft}
+  \begin{center}
+    \Large Jacobs University --- Computer Science
+  \end{center}
+
+  \newpage
+  \thispagestyle{empty}
+
+  With my signature, I certify that this thesis has been written by me
+  using only the indicates resources and materials. Where I have
+  presented data and results, the data and results are complete,
+  genuine, and have been obtained by me unless otherwise acknowledged;
+  where my results derive from computer programs, these computer
+  programs have been written by me unless otherwise acknowledged. I
+  further confirm that this thesis has not been submitted, either in
+  part or as a whole, for any other academic degree at this or another
+  institution.
+
+  \vspace{20mm}
+
+  Signature \hfill Place, Date
+
+  \newpage
+
+  \section*{Abstract}
+  
+  Consider this a separate document, although it is submitted together
+  with the rest. The abstract aims at another audience than the rest
+  of the proposal. It is directed at the final decision maker or
+  generalist, who typically is not an expert at all in your field, but
+  more a manager kind of person. Thus, don't go into any technical
+  description in the abstract, but use it to motivate the work and to
+  highlight the importance of your project.
+
+  (target size: 15-20 lines)
+
+  \newpage
+  \tableofcontents
+
+  \clearpage
+  \pagenumbering{arabic}
+
+  \section{Introduction}
+
+  This, like the rest, addresses fellow experts from your field (but
+  not from your particular topic of research). Here you should
+  technically connect to the main concepts from that field and give an
+  outline of your project, stating the research/engineering question
+  that you want to get answered by your project.
+
+  (target size: 1 page)
+
+  \section{Statement and Motivation of Research}
+
+  This part should make clear which question, exactly, you are
+  pursuing, and why your project is relevant/interesting. This is the
+  place to cite relevant literature. Where does your project extend
+  the state of the art? What weaknesses in known approaches do you
+  hope to overcome? If you have carried out preliminary experiments,
+  describe them here.
+
+  (target size: 3-5 pages)
+
+  \section{Description of the Investigation}
+
+  This is the technical core of the thesis. Here you lay out your how
+  you answered your research question, you specify your design of
+  experiments or simulations, point out difficulties that you
+  encountered, etc.
+
+  (target size: 3-4 pages)
+
+  \section{Evaluation of the Investigation}
+
+  This section discusses criteria that are used to evaluate the
+  research results. Make sure your results can be used to published
+  research results, i.e., to the already known state-of-the-art.
+
+  (target size: 1-3 page)
+
+  \section{Conclusions}
+
+  Summarize the main aspects and results of the research
+  project. Provide an answer to the research questions stated earlier.
+
+  (target size: 1/2 page)
+
+  \nocite{JS06}
+
+  \newpage
+  \bibliographystyle{unsrt}
+  \bibliography{bsc-sample}
+
+\end{document}
