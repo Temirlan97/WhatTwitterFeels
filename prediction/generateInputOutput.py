@@ -83,6 +83,13 @@ def getInputVector(pricesForFrame, tweetsForFrame, length):
 		return np.append(tweetScorePartitions, pricesForFrame)
 	return np.append(tweetScoreCounter, pricesForFrame)
 
+def getRawInput(pricesForFrame, tweetsForFrame):
+	scores = []
+	for tweetList in tweetsForFrame:
+		for tweet in tweetList[1]:
+			scores.append(tweet)
+	return np.append(pricesForFrame, scores)
+
 def getLongInputVector(pricesForFrame, tweetsForFrame):
 	return getInputVector(pricesForFrame, tweetsForFrame, 201)
 
@@ -107,6 +114,8 @@ def isTestData(frameLower, frameUpper):
 		return frameUpper >= startDateTest
 	elif mode == "Test_Frame" or mode == "FramewiseFrame":
 		return frameUpper >= startDateTest and frameUpper < endDateTest
+	elif mode == "Raw":
+		return False
 
 
 def inputOutputMatrices(startDate, endDate, interval, frameWidth, inputTrain, outputTrain, inputTest, outputTest):
@@ -134,24 +143,24 @@ def inputOutputMatrices(startDate, endDate, interval, frameWidth, inputTrain, ou
 			pass
 		#minimum tweets in a day for an input to count
 		if(len(tweetsForFrame) > 100):
-			inputVector = getLongInputVector(pricesForFrame, tweetsForFrame)
+			inputVector = getRawInput(pricesForFrame, tweetsForFrame)
 			if isTestData(frameLower, frameUpper):
 				inputTest.append(inputVector)
 				outputTest.append(futurePrices)
 			else:
 				inputTrain.append(inputVector)
 				outputTrain.append(futurePrices)
-		frameLower += interval
-		frameUpper += interval
+		frameLower += frameWidth
+		frameUpper += frameWidth
 
 
 
-interval = timedelta(minutes=1)
-frameWidth = timedelta(hours=1)
-postfix = "_1m-1h"
-startDateTest = datetime.datetime(2018, 04, 20)
+interval = timedelta(hours=1)
+frameWidth = timedelta(days=7)
+postfix = "_1h-7d"
+startDateTest = datetime.datetime.now()
 endDateTest = endDate
-mode = "Into_two"
+mode = "Raw"
 timeline = generateTimeline(startDate, endDate, interval)
 infoLog("Creating a price dict...")
 stopwatchStart = time.time()
@@ -217,11 +226,13 @@ del inputTest
 del outputTest
 stopwatchEnd = time.time()
 infoLog("Computing Phi and Z took: " + str(stopwatchEnd - stopwatchStart))
-prefix = "data/Computed/Long/"
-np.save(prefix + mode + "/trainingInput" + postfix, Phi)
-np.save(prefix + mode + "/trainingOutput" + postfix, Z)
-np.save(prefix + mode + "/testingInput" + postfix, PhiTest)
-np.save(prefix + mode + "/testingOutput" + postfix, ZTest)
+prefix = "data/Computed/"
+np.save(prefix + mode + "/input" + postfix, Phi)
+np.save(prefix + mode + "/output" + postfix, Z)
+# np.save(prefix + mode + "/trainingInput" + postfix, Phi)
+# np.save(prefix + mode + "/trainingOutput" + postfix, Z)
+# np.save(prefix + mode + "/testingInput" + postfix, PhiTest)
+# np.save(prefix + mode + "/testingOutput" + postfix, ZTest)
 print(Phi.shape)
 print(Z.shape)
 print(PhiTest.shape)

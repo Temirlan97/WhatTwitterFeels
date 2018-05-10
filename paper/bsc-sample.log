@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.3.12)  2 MAY 2018 11:36
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.3.12)  10 MAY 2018 15:16
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -54,6 +54,17 @@ Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 \Gm@layoutvoffset=\dimen110
 \Gm@dimlist=\toks15
 )
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amssymb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\@emptytoks=\toks16
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+))
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/helvet.sty
 Package: helvet 2005/04/12 PSNFSS-v9.2a (WaS) 
 )
@@ -198,26 +209,26 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 )
 \Hy@SectionHShift=\skip43
 )
-Package hyperref Info: Option `colorlinks' set `true' on input line 28.
+Package hyperref Info: Option `colorlinks' set `true' on input line 29.
 
 (./bsc-sample.aux)
 \openout1 = `bsc-sample.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Font Info:    Try loading font information for OT1+phv on input line 30.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Try loading font information for OT1+phv on input line 31.
  (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1phv.fd
 File: ot1phv.fd 2001/06/04 scalable font definitions for OT1/phv.
 )
@@ -262,12 +273,12 @@ File: ot1phv.fd 2001/06/04 scalable font definitions for OT1/phv.
 \scratchbox=\box26
 \nofMPsegments=\count102
 \nofMParguments=\count103
-\everyMPshowfont=\toks16
+\everyMPshowfont=\toks17
 \MPscratchCnt=\count104
 \MPscratchDim=\dimen118
 \MPnumerator=\count105
 \makeMPintoPDFobject=\count106
-\everyMPtoPDFconversion=\toks17
+\everyMPtoPDFconversion=\toks18
 ) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
 
@@ -293,7 +304,7 @@ File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
 )
 Package color Info: Driver file: pdftex.def on input line 143.
 )
-Package hyperref Info: Link coloring ON on input line 30.
+Package hyperref Info: Link coloring ON on input line 31.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
@@ -303,68 +314,235 @@ Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
 \c@section@level=\count107
 )
-LaTeX Info: Redefining \ref on input line 30.
-LaTeX Info: Redefining \pageref on input line 30.
-LaTeX Info: Redefining \nameref on input line 30.
+LaTeX Info: Redefining \ref on input line 31.
+LaTeX Info: Redefining \pageref on input line 31.
+LaTeX Info: Redefining \nameref on input line 31.
 
 (./bsc-sample.out) (./bsc-sample.out)
 \@outlinefile=\write3
 \openout3 = `bsc-sample.out'.
 
 
-<bsc-logo.pdf, id=24, 233.87375pt x 84.315pt>
+<bsc-logo.pdf, id=96, 233.87375pt x 84.315pt>
 File: bsc-logo.pdf Graphic file (type pdf)
  <use bsc-logo.pdf>
-Package pdftex.def Info: bsc-logo.pdf used on input line 36.
+Package pdftex.def Info: bsc-logo.pdf used on input line 37.
 (pdftex.def)             Requested size: 163.71048pt x 59.02008pt.
 LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <20.74> not available
-(Font)              Font shape `OT1/phv/b/n' tried instead on input line 41.
+(Font)              Font shape `OT1/phv/b/n' tried instead on input line 42.
 LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <14.4> not available
-(Font)              Font shape `OT1/phv/b/n' tried instead on input line 50.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 60.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 60.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 60.
- [1
+(Font)              Font shape `OT1/phv/b/n' tried instead on input line 51.
+LaTeX Font Info:    Try loading font information for U+msa on input line 61.
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./bsc-logo.pdf>] [2] [3]
-(./bsc-sample.toc
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 61.
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+) [1
+
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./bsc-logo.pdf>] [2] [3] (
+./bsc-sample.toc
 LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <10.95> not available
 (Font)              Font shape `OT1/phv/b/n' tried instead on input line 1.
 )
 \tf@toc=\write4
 \openout4 = `bsc-sample.toc'.
 
- [4] [1
 
-] (./bsc-sample.bbl)
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 165.
+[4]
+LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <12> not available
+(Font)              Font shape `OT1/phv/b/n' tried instead on input line 117.
+Missing character: There is no ‚ in font phvr7t!
+Missing character: There is no Ä in font phvr7t!
+Missing character: There is no ú in font phvr7t!
+Missing character: There is no ‚ in font phvr7t!
+Missing character: There is no Ä in font phvr7t!
+Missing character: There is no ù in font phvr7t!
+Missing character: There is no ‚ in font phvr7t!
+Missing character: There is no Ä in font phvr7t!
+Missing character: There is no ô in font phvr7t!
+Missing character: There is no ‚ in font phvr7t!
+Missing character: There is no Ä in font phvr7t!
+Missing character: There is no ô in font phvr7t!
+Missing character: There is no ‚ in font phvr7t!
+Missing character: There is no Ä in font phvr7t!
+Missing character: There is no ú in font phvr7t!
+Missing character: There is no ‚ in font phvr7t!
+Missing character: There is no Ä in font phvr7t!
+Missing character: There is no ù in font phvr7t!
+Missing character: There is no ‚ in font phvr7t!
+Missing character: There is no Ä in font phvr7t!
+Missing character: There is no ô in font phvr7t!
+Missing character: There is no ‚ in font phvr7t!
+Missing character: There is no Ä in font phvr7t!
+Missing character: There is no ô in font phvr7t!
+Missing character: There is no ‚ in font phvr7t!
+Missing character: There is no Ä in font phvr7t!
+Missing character: There is no ú in font phvr7t!
+Missing character: There is no ‚ in font phvr7t!
+Missing character: There is no Ä in font phvr7t!
+Missing character: There is no ù in font phvr7t!
+ [1
+
+]
+Missing character: There is no ‚ in font phvr7t!
+Missing character: There is no Ä in font phvr7t!
+Missing character: There is no ô in font phvr7t!
  [2]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 165.
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\@ifnextchar' on input line 150.
+
+Missing character: There is no ‚ in font phvr7t!
+Missing character: There is no Ä in font phvr7t!
+Missing character: There is no ú in font phvr7t!
+Missing character: There is no ‚ in font phvr7t!
+Missing character: There is no Ä in font phvr7t!
+Missing character: There is no ¶ in font phvr7t!
+Missing character: There is no ‚ in font phvr7t!
+Missing character: There is no Ä in font phvr7t!
+Missing character: There is no ù in font phvr7t!
+Missing character: There is no ‚ in font phvr7t!
+Missing character: There is no Ä in font phvr7t!
+Missing character: There is no ô in font phvr7t!
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\@ifnextchar' on input line 154.
+
+Missing character: There is no ‚ in font phvr7t!
+Missing character: There is no Ä in font phvr7t!
+Missing character: There is no ô in font phvr7t!
+Missing character: There is no ‚ in font phvr7t!
+Missing character: There is no Ä in font phvr7t!
+Missing character: There is no ô in font phvr7t!
+Missing character: There is no ‚ in font phvr7t!
+Missing character: There is no Ä in font phvr7t!
+Missing character: There is no ú in font phvr7t!
+Missing character: There is no ‚ in font phvr7t!
+Missing character: There is no Ä in font phvr7t!
+Missing character: There is no ô in font phvr7t!
+Missing character: There is no ‚ in font phvr7t!
+Missing character: There is no Ä in font phvr7t!
+Missing character: There is no ù in font phvr7t!
+[3]
+Missing character: There is no ‚ in font phvr7t!
+Missing character: There is no Ä in font phvr7t!
+Missing character: There is no ô in font phvr7t!
+Missing character: There is no ‚ in font phvr7t!
+Missing character: There is no Ä in font phvr7t!
+Missing character: There is no ú in font phvr7t!
+Missing character: There is no ‚ in font phvr7t!
+Missing character: There is no Ä in font phvr7t!
+Missing character: There is no ù in font phvr7t!
+Missing character: There is no ‚ in font phvr7t!
+Missing character: There is no Ä in font phvr7t!
+Missing character: There is no ô in font phvr7t!
+Missing character: There is no ‚ in font phvr7t!
+Missing character: There is no Ä in font phvr7t!
+Missing character: There is no ú in font phvr7t!
+Missing character: There is no ‚ in font phvr7t!
+Missing character: There is no Ä in font phvr7t!
+Missing character: There is no ô in font phvr7t!
+Missing character: There is no ‚ in font phvr7t!
+Missing character: There is no Ä in font phvr7t!
+Missing character: There is no ù in font phvr7t!
+Missing character: There is no ‚ in font phvr7t!
+Missing character: There is no Ä in font phvr7t!
+Missing character: There is no ô in font phvr7t!
+Missing character: There is no ‚ in font phvr7t!
+Missing character: There is no Ä in font phvr7t!
+Missing character: There is no ô in font phvr7t!
+Missing character: There is no ‚ in font phvr7t!
+Missing character: There is no Ä in font phvr7t!
+Missing character: There is no ô in font phvr7t!
+Missing character: There is no ‚ in font phvr7t!
+Missing character: There is no Ä in font phvr7t!
+Missing character: There is no ú in font phvr7t!
+Missing character: There is no ‚ in font phvr7t!
+Missing character: There is no Ä in font phvr7t!
+Missing character: There is no ù in font phvr7t!
+Missing character: There is no ‚ in font phvr7t!
+Missing character: There is no Ä in font phvr7t!
+Missing character: There is no ú in font phvr7t!
+Missing character: There is no ‚ in font phvr7t!
+Missing character: There is no Ä in font phvr7t!
+Missing character: There is no ù in font phvr7t!
+Missing character: There is no ‚ in font phvr7t!
+Missing character: There is no Ä in font phvr7t!
+Missing character: There is no ú in font phvr7t!
+Missing character: There is no ‚ in font phvr7t!
+Missing character: There is no Ä in font phvr7t!
+Missing character: There is no ù in font phvr7t!
+Missing character: There is no ‚ in font phvr7t!
+Missing character: There is no Ä in font phvr7t!
+Missing character: There is no ú in font phvr7t!
+Missing character: There is no ‚ in font phvr7t!
+Missing character: There is no Ä in font phvr7t!
+Missing character: There is no ù in font phvr7t!
+Missing character: There is no ‚ in font phvr7t!
+Missing character: There is no Ä in font phvr7t!
+Missing character: There is no ô in font phvr7t!
+ [4] [5]
+Missing character: There is no ‚ in font phvr7t!
+Missing character: There is no Ä in font phvr7t!
+Missing character: There is no ô in font phvr7t!
+Missing character: There is no ‚ in font phvr7t!
+Missing character: There is no Ä in font phvr7t!
+Missing character: There is no ô in font phvr7t!
+ [6] [7] (./bsc-sample.bbl
+Overfull \hbox (31.75525pt too wide) in paragraph at lines 43--47
+[]\OT1/phv/m/n/10.95 Official Twit-ter API.  https://developer.twitter.com/en/d
+ocs/tweets/search/overview/standard,
+ []
+
+
+Underfull \hbox (badness 6842) in paragraph at lines 49--52
+[]\OT1/phv/m/n/10.95 Jefferson-Henrique.  https://github.com/jefferson-henrique
+/getoldtweets-python,
+ []
+
+)
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 230.
+ [8]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 230.
  (./bsc-sample.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 165.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 165.
-Package rerunfilecheck Info: File `bsc-sample.out' has not changed.
-(rerunfilecheck)             Checksum: A857AF58DBFEB5841B5D14A89A077C8C;297.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 165.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 230.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 230.
+
+
+Package rerunfilecheck Warning: File `bsc-sample.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `bsc-sample.out':
+(rerunfilecheck)             Before: 6FCC3928FAAF16CEC2CC85A6D25E20B9;1670
+(rerunfilecheck)             After:  9FA7A92479364F1A16DB93A5B25431DA;1661.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 230.
  ) 
 Here is how much of TeX's memory you used:
- 5660 strings out of 493029
- 84274 string characters out of 6136234
- 174043 words of memory out of 5000000
- 9130 multiletter control sequences out of 15000+600000
- 17461 words of font info for 37 fonts, out of 8000000 for 9000
+ 6034 strings out of 493029
+ 88651 string characters out of 6136234
+ 179984 words of memory out of 5000000
+ 9444 multiletter control sequences out of 15000+600000
+ 22251 words of font info for 53 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 29i,6n,28p,287b,318s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 29i,6n,32p,1950b,318s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
-e/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/share/texlive/texmf-dist
-/fonts/type1/urw/helvetic/uhvr8a.pfb>
-Output written on bsc-sample.pdf (6 pages, 30815 bytes).
+e/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texm
+f-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist
+/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/
+type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
+ublic/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/am
+sfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts
+/symbols/msbm10.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhv
+b8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb>
+Output written on bsc-sample.pdf (12 pages, 108001 bytes).
 PDF statistics:
- 83 PDF objects out of 1000 (max. 8388607)
- 70 compressed objects within 1 object stream
- 16 named destinations out of 1000 (max. 500000)
- 46 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 286 PDF objects out of 1000 (max. 8388607)
+ 258 compressed objects within 3 object streams
+ 56 named destinations out of 1000 (max. 500000)
+ 190 words of extra memory for PDF output out of 10000 (max. 10000000)
 

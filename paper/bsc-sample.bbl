@@ -1,8 +1,65 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{10}
 
-\bibitem{JS06}
-J.~Sample.
-\newblock {On the Possibility of the Impossible}.
-\newblock Technical report, Jacobs University Bremen, September 2010.
+\bibitem{BTC}
+Satoshi Nakomoto.
+\newblock {Bitcoin: A Peer-to-Peer Electronic Cash System}.
+
+\bibitem{hashrate}
+Blockchain.info.
+\newblock https://blockchain.info/charts/hash-rate, May 2018.
+
+\bibitem{confirmationtime}
+Blockchchain.info.
+\newblock https://blockchain.info/charts/avg-confirmation-time, May 2018.
+
+\bibitem{pricechart}
+Coinmarketcap.
+\newblock https://coinmarketcap.com/currencies/bitcoin/, May 2018.
+
+\bibitem{cryptolist}
+Coinmarketcap.
+\newblock https://coinmarketcap.com/, May 2018.
+
+\bibitem{vader}
+Eric~Gilbert C.J.Hutto.
+\newblock Vader: A parsimonious rule-based model for sentiment analysis of
+  social media text, 2014.
+
+\bibitem{related1}
+Jacob~Loennoe Evita~Stenqvist.
+\newblock Predicting bitcoin price fluctuation with twitter sentiment analysis,
+  June 2017.
+
+\bibitem{related2}
+Stephanie~Rosales Stuart~Colianni and Michael Signorotti.
+\newblock Algorithmic trading of cryptocurrency based on twitter sentiment
+  analysis.
+
+\bibitem{textprocessingfaq}
+Text-Processing.com FAQ.
+\newblock http://text-processing.com/docs/faq.html, May 2018.
+
+\bibitem{twitterstandardsearch}
+Official~Twitter API.
+\newblock
+  https://developer.twitter.com/en/docs/tweets/search/overview/standard, May
+  2018.
+
+\bibitem{getoldtweets}
+Jefferson-Henrique.
+\newblock https://github.com/jefferson-henrique/getoldtweets-python, April
+  2018.
+
+\bibitem{tweepy}
+Tweepy.
+\newblock http://www.tweepy.org/, May 2018.
+
+\bibitem{arubacloud}
+Aruba Cloud.
+\newblock https://www.arubacloud.com/, May 2018.
+
+\bibitem{vadergit}
+Vader~Github repository.
+\newblock https://github.com/cjhutto/vadersentiment, 2018.
 
 \end{thebibliography}

@@ -3,44 +3,49 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: bsc-sample.aux
 The style file: unsrt.bst
 Database file #1: bsc-sample.bib
-You've used 1 entry,
+Warning--string name "march" is undefined
+--line 83 of file bsc-sample.bib
+Name 1 in "Stuart Colianni, Stephanie Rosales, and Michael Signorotti" has a comma at the end for entry related2
+while executing---line 944 of file unsrt.bst
+You've used 14 entries,
             1791 wiz_defined-function locations,
-            450 strings with 3601 characters,
-and the built_in function-call counts, 143 in all, are:
-= -- 12
-> -- 4
+            491 strings with 4702 characters,
+and the built_in function-call counts, 1704 in all, are:
+= -- 111
+> -- 60
 < -- 0
-+ -- 2
-- -- 1
-* -- 6
-:= -- 34
-add.period$ -- 3
-call.type$ -- 1
-change.case$ -- 2
++ -- 29
+- -- 15
+* -- 36
+:= -- 250
+add.period$ -- 28
+call.type$ -- 14
+change.case$ -- 14
 chr.to.int$ -- 0
-cite$ -- 1
-duplicate$ -- 6
-empty$ -- 13
-format.name$ -- 1
-if$ -- 27
+cite$ -- 14
+duplicate$ -- 70
+empty$ -- 253
+format.name$ -- 15
+if$ -- 395
 int.to.chr$ -- 0
-int.to.str$ -- 1
+int.to.str$ -- 14
 missing$ -- 0
-newline$ -- 8
-num.names$ -- 1
-pop$ -- 2
+newline$ -- 59
+num.names$ -- 14
+pop$ -- 94
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 1
+skip$ -- 62
 stack$ -- 0
 substring$ -- 0
-swap$ -- 0
+swap$ -- 14
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 0
-while$ -- 1
-width$ -- 2
-write$ -- 13
+while$ -- 14
+width$ -- 16
+write$ -- 112
+(There was 1 error message)
