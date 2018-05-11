@@ -7,45 +7,45 @@ Warning--string name "march" is undefined
 --line 83 of file bsc-sample.bib
 Name 1 in "Stuart Colianni, Stephanie Rosales, and Michael Signorotti" has a comma at the end for entry related2
 while executing---line 944 of file unsrt.bst
-You've used 14 entries,
+You've used 17 entries,
             1791 wiz_defined-function locations,
-            491 strings with 4702 characters,
-and the built_in function-call counts, 1704 in all, are:
-= -- 111
-> -- 60
+            502 strings with 4924 characters,
+and the built_in function-call counts, 2060 in all, are:
+= -- 135
+> -- 72
 < -- 0
-+ -- 29
-- -- 15
-* -- 36
-:= -- 250
-add.period$ -- 28
-call.type$ -- 14
-change.case$ -- 14
++ -- 35
+- -- 18
+* -- 41
+:= -- 301
+add.period$ -- 34
+call.type$ -- 17
+change.case$ -- 17
 chr.to.int$ -- 0
-cite$ -- 14
-duplicate$ -- 70
-empty$ -- 253
-format.name$ -- 15
-if$ -- 395
+cite$ -- 17
+duplicate$ -- 85
+empty$ -- 307
+format.name$ -- 18
+if$ -- 479
 int.to.chr$ -- 0
-int.to.str$ -- 14
+int.to.str$ -- 17
 missing$ -- 0
-newline$ -- 59
-num.names$ -- 14
-pop$ -- 94
+newline$ -- 71
+num.names$ -- 17
+pop$ -- 115
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 62
+skip$ -- 74
 stack$ -- 0
 substring$ -- 0
-swap$ -- 14
+swap$ -- 17
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 0
-while$ -- 14
-width$ -- 16
-write$ -- 112
+while$ -- 17
+width$ -- 19
+write$ -- 136
 (There was 1 error message)

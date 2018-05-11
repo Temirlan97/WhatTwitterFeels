@@ -1,5 +1,15 @@
 \begin{thebibliography}{10}
 
+\bibitem{related1}
+Jacob~Loennoe Evita~Stenqvist.
+\newblock Predicting bitcoin price fluctuation with twitter sentiment analysis,
+  June 2017.
+
+\bibitem{related2}
+Stephanie~Rosales Stuart~Colianni and Michael Signorotti.
+\newblock Algorithmic trading of cryptocurrency based on twitter sentiment
+  analysis.
+
 \bibitem{BTC}
 Satoshi Nakomoto.
 \newblock {Bitcoin: A Peer-to-Peer Electronic Cash System}.
@@ -24,16 +34,6 @@ Coinmarketcap.
 Eric~Gilbert C.J.Hutto.
 \newblock Vader: A parsimonious rule-based model for sentiment analysis of
   social media text, 2014.
-
-\bibitem{related1}
-Jacob~Loennoe Evita~Stenqvist.
-\newblock Predicting bitcoin price fluctuation with twitter sentiment analysis,
-  June 2017.
-
-\bibitem{related2}
-Stephanie~Rosales Stuart~Colianni and Michael Signorotti.
-\newblock Algorithmic trading of cryptocurrency based on twitter sentiment
-  analysis.
 
 \bibitem{textprocessingfaq}
 Text-Processing.com FAQ.
@@ -61,5 +61,18 @@ Aruba Cloud.
 \bibitem{vadergit}
 Vader~Github repository.
 \newblock https://github.com/cjhutto/vadersentiment, 2018.
+
+\bibitem{pythonkfold}
+Python~Library (KFold).
+\newblock http://scikit-learn.org/stable/modules/classes.html\#module-sklearn,
+  2018.
+
+\bibitem{mllecturenotes}
+Herbert Jaeger.
+\newblock Machine learning lecture notes, May 2018.
+
+\bibitem{numpy}
+Numpy~Python Library.
+\newblock http://www.numpy.org/, 2018.
 
 \end{thebibliography}

@@ -45,71 +45,78 @@ def getPartitionedInput(PhiRaw, pricesN, tweetsN):
 	Phi = []
 	factor = (tweetsN)/2.0
 	for row in PhiRaw:
-		# Phi.append(row[:pricesN])
-		tweetScores = row[pricesN:]
-		tweetScoreCounter = np.zeros(tweetsN, dtype=int)
-		for score in tweetScores:
-			idxForTweetScore = int((score + 1.0)*factor)
-			if(score == 1):
-				idxForTweetScore = tweetsN - 1
-			tweetScoreCounter[idxForTweetScore] = tweetScoreCounter[idxForTweetScore] + 1
-		tweetScorePartitions = np.zeros(tweetsN, dtype=float)
-		for i in range(0, len(tweetScoreCounter)):
-			tweetScorePartitions[i] = float(tweetScoreCounter[i]*100)/len(tweetScores)
+		Phi.append(row[:pricesN])
+		continue
+		# tweetScores = row[pricesN:]
+		# tweetScoreCounter = np.zeros(tweetsN, dtype=int)
+		# for score in tweetScores:
+		# 	idxForTweetScore = int((score + 1.0)*factor)
+		# 	if(score == 1):
+		# 		idxForTweetScore = tweetsN - 1
+		# 	tweetScoreCounter[idxForTweetScore] = tweetScoreCounter[idxForTweetScore] + 1
+		# tweetScorePartitions = np.zeros(tweetsN, dtype=float)
+		# for i in range(0, len(tweetScoreCounter)):
+		# 	tweetScorePartitions[i] = float(tweetScoreCounter[i]*100)/len(tweetScores)
 		# Phi.append(np.append(row[:pricesN], tweetScorePartitions))
-		Phi.append(tweetScorePartitions)
+		# Phi.append(tweetScorePartitions)
 	return np.array(Phi)
 
 
 prefix = "data/Computed/Raw/"
-intervalAndFrame = "1h-7d"
-PhiRaw = np.load(prefix + "input_" + intervalAndFrame + ".npy")
-Z = np.load(prefix + "output_" + intervalAndFrame + ".npy")
 
-pricesN = len(Z[0])
-kf = KFold(n_splits=4, shuffle=False)
-smallestMeanError = 100
-optimalAccuracy = 0
-optimalTweetsN = 50
-meanErrors = []
-partitions = []
-accuracies = []
-for tweetsN in range(60, 61, 1):
-	print("===========================================")
-	print("Computing tweetsN = " + str(tweetsN) + " ...")
-	Phi = getPartitionedInput(PhiRaw, pricesN, tweetsN)
-	meanError = 0.0
-	meanAccuracy = 0.0
-	caseCounter = 0
-	for train_index, test_index in kf.split(Phi):
-		name = "Train: " + str(train_index) + " Test: " + str(test_index)
-		PhiTrain, PhiTest = Phi[train_index], Phi[test_index]
-		ZTrain, ZTest = Z[train_index], Z[test_index]
-		caseCounter += 1
-		meanErrorReturned, accuracyReturned = analyzeError(name, PhiTrain, ZTrain, PhiTest, ZTest)
-		meanError += meanErrorReturned
-		meanAccuracy += accuracyReturned
-	meanError = meanError/caseCounter
-	meanAccuracy = meanAccuracy/caseCounter
-	print("meanError = " + str(meanError) + " meanAccuracy = " + str(meanAccuracy) + "%")
-	meanErrors.append(meanError)
-	partitions.append(tweetsN)
-	accuracies.append(meanAccuracy)
-	if(meanError < smallestMeanError):
-		optimalAccuracy = meanAccuracy
-		smallestMeanError = meanError
-		optimalTweetsN = tweetsN
 
-infoLog("optimalTweetsN = " + str(optimalTweetsN))
-infoLog("smallestMeanError = " + str(smallestMeanError))
-infoLog("optimalAccuracy = " + str(optimalAccuracy))
-plt.plot(partitions, meanErrors, color='red')
-plt.title(str(optimalTweetsN) + "->" + str(smallestMeanError) + "(" + str(optimalAccuracy) + "%)")
-plt.show()
+allPeriods = ["1m-1h","1h-1d","1h-7d","1d-7d"]
+for intervalAndFrame in allPeriods:
+	PhiRaw = np.load(prefix + "input_" + intervalAndFrame + ".npy")
+	Z = np.load(prefix + "output_" + intervalAndFrame + ".npy")
+	pricesN = len(Z[0])
+	kf = KFold(n_splits=4, shuffle=False)
+	smallestMeanError = 100
+	optimalAccuracy = 0
+	optimalTweetsN = 2
+	meanErrors = []
+	partitions = []
+	accuracies = []
+	prefixForCsv = prefix + "Results/Prices/"
+	with open(prefixForCsv + "errors" + intervalAndFrame + ".csv", "w") as csvFile:
+		csvFile.write("tweetsN,mean_error,meanAccuracy")
+		for tweetsN in range(2, 3, 1):
+			print("===========================================")
+			print("Computing tweetsN = " + str(tweetsN) + " ...")
+			Phi = getPartitionedInput(PhiRaw, pricesN, tweetsN)
+			meanError = 0.0
+			meanAccuracy = 0.0
+			caseCounter = 0
+			for train_index, test_index in kf.split(Phi):
+				name = "Train: " + str(train_index) + " Test: " + str(test_index)
+				PhiTrain, PhiTest = Phi[train_index], Phi[test_index]
+				ZTrain, ZTest = Z[train_index], Z[test_index]
+				caseCounter += 1
+				meanErrorReturned, accuracyReturned = analyzeError(name, PhiTrain, ZTrain, PhiTest, ZTest)
+				meanError += meanErrorReturned
+				meanAccuracy += accuracyReturned
+			meanError = meanError/caseCounter
+			meanAccuracy = meanAccuracy/caseCounter
+			print("meanError = " + str(meanError) + " meanAccuracy = " + str(meanAccuracy) + "%")
+			csvFile.write("\n" + str(tweetsN) + "," + str(meanError) + "," + str(meanAccuracy))
+			meanErrors.append(meanError)
+			partitions.append(tweetsN)
+			accuracies.append(meanAccuracy)
+			if(meanError < smallestMeanError):
+				optimalAccuracy = meanAccuracy
+				smallestMeanError = meanError
+				optimalTweetsN = tweetsN
 
-plt.plot(partitions, accuracies, color='green')
-plt.title(str(optimalTweetsN) + "->" + str(smallestMeanError) + "(" + str(optimalAccuracy) + "%)")
-plt.show()
+		infoLog("optimalTweetsN = " + str(optimalTweetsN))
+		infoLog("smallestMeanError = " + str(smallestMeanError))
+		infoLog("optimalAccuracy = " + str(optimalAccuracy))
+		# plt.plot(partitions, meanErrors, color='red')
+		# plt.title(str(optimalTweetsN) + "->" + str(smallestMeanError) + "(" + str(optimalAccuracy) + "%)")
+		# plt.show()
+
+		# plt.plot(partitions, accuracies, color='green')
+		# plt.title(str(optimalTweetsN) + "->" + str(smallestMeanError) + "(" + str(optimalAccuracy) + "%)")
+		# plt.show()
 
 
 

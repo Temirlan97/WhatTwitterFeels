@@ -9,7 +9,10 @@
 
 \usepackage[a4paper,top=3cm,bottom=3cm,left=3cm,right=3cm]{geometry}
 \renewcommand{\familydefault}{\sfdefault}
+\usepackage{algorithm}
+\usepackage{algorithmic}
 \usepackage{amssymb}
+\usepackage{amsmath}
 \usepackage{helvet}
 \usepackage{parskip}		%% blank lines between paragraphs, no indent
 \usepackage[pdftex]{graphicx}	%% include graphics, preferrably pdf
@@ -174,16 +177,16 @@
   
   \subsection{Feature vectors}
   
-  In order to be able to use linear regression, we need to think of what should the input and output vectors should contain to meet our problem well. Linear regression was performed on different input data or to be more precise, three types of input: historical price, tweets vector, and combination of these two. Output of our predicting algorithm will be the price vector. Predictions in this work are done for different frame-widths and intervals. This terminology was chosen for this paper with the following definitions. Frame-width is the length of the period of time for which the prediction is being made. For example if the frame-width is 1 hour, we are trying to predict the price over the next coming hour. Interval is the distance between predictions. For example if the frame-width is 1 hour and the interval is 1 minute, we are trying to predict the price for each minute of the coming hour, or in other words, we do 60 predictions for the coming hour. The terms frame-width and interval will be now used without further explanations. 
+  In order to be able to use linear regression, we need to think of what should the input and output vectors should contain to meet our problem well. Linear regression was performed on different input data or to be more precise, three types of input: historical price, tweets vector, and combination of these two. Output of our predicting algorithm will be the price vector. Predictions in this work are done for different frame-widths and intervals. This terminology was chosen for this paper with the following definitions. {\it Frame-width} is the length of the period of time for which the prediction is being made. For example if the frame-width is 1 hour, we are trying to predict the price over the next coming hour. {\it Interval} is the distance between predictions. For example if the frame-width is 1 hour and the interval is 1 minute, we are trying to predict the price for each minute of the coming hour, or in other words, we do 60 predictions for the coming hour. The terms frame-width and interval will be now used without further explanations. 
   
-  \subsubsection{Price vectors}
+  \subsubsection{Price vectors}\label{pricevectors}
   
   Price vector are the vectors representing price of Bitcoin over certain period in the timeline or in our case the whole frame-width. In all cases of linear regression done in this work, the output vector is the price vector for the future. In some cases, price vectors of the past are used as input vectors as well. The structure of the price vector is straightforward. If we have frame-width of 1 day and interval of 1 hour, our price vector would be of dimension 24 or in other words, it would contain hourly price information for the whole 24 hours or 1 complete day. Here, we make a small change. Instead of storing simply the prices, we store the price change in percentage from the beginning of the frame. Thus, the first value of the price vector would always be zero since that is the point of time which we take as our baseline. The next value of the vector would be the price change after one interval. If we continue our example, and the price changed from 100 to 110 in one interval, first two values of the price vector would be 0 and 10. This way we ensure that we are looking at the trend instead of looking at the concrete price changes and being bound to some time periods. The price vector from 2010 can now be similar to 2018 and our prediction algorithm would recognize it better. Imagine if we had prices instead of price changes. Then, the price vector from 2010 would contain couple of dollars, if not cents, unlike the vector from 2018 which would contain thousands of dollars. Using our version of price vectors, we reduce the size of vector by 1, since the first value will always be zero. That place can be reserved for future use. The very straight forward way to use it would be to store the initial price as the first value of the vector.
   
-  \subsubsection{Tweet vectors}
+  \subsubsection{Tweet vectors}\label{tweetvectors}
   
   When talking about hundreds of thousands of tweets, extracting the feature vector from it is not that obvious. Keeping in mind the idea/claim, that the price depends on the mood of people all around the world, all we need is a feature vector that, simply said, can tell how happy or sad is Twitter Bitcoin community. The raw dataset we have after processing tweets with VADER is list of values (or sentiment scores of tweets) ranging between -1 and 1, where -1 is completely negative and 1 is the opposite. Now we want to divide them into M partitions and calculate the percentage of tweets coming to each partition. For example if M would be 2, we would just have two partitions: [-1,0), [0,1]. Or in other words, we just calculate what part of tweets is negative and what part is positive. Thus, we our tweet vector would have dimension of 2. Here is what was described shortly:
-  \begin{equation}
+  \begin{equation}\label{partitionsInTweetVector}
 	  M partitions \Rightarrow VTweet \in \mathbb{R}^M 
   \end{equation}
   \begin{equation}
@@ -193,9 +196,8 @@
 	  \sum_{1}^{M} VTweet_i = 1
   \end{equation}
 	  
-  However, it might be tricky to choose the optimal M It’s not obvious what resolution would be enough to preserve enough data. Moreover, the value of optimal M may depend on the frame-width and interval. For example if we are trying to predict the price for the coming year, just the small M may be sufficient to find out the general mood for long term predictions. Thus, the testing data was divided into parts and cross validation has been performed for each frame-width and interval to find the optimal M. The error was computed for different values for M starting with 2 and the error was calculated on each iteration. M was being increased until the testing error stopped decreasing or the decrease was below certain threshold. The following optimal Ms were discovered by doing cross-validation:
+  However, it might be tricky to choose the optimal M It’s not obvious what resolution would be enough to preserve enough data. Moreover, the value of optimal M may depend on the frame-width and interval. For example if we are trying to predict the price for the coming year, just the small M may be sufficient to find out the general mood for long term predictions. Thus, the testing data was divided into parts and cross validation has been performed for each frame-width and interval to find the optimal M. The error was computed for different values for M starting with 2 and the error was calculated on each iteration. M was being increased until the testing error stopped decreasing or the decrease was below certain threshold. The optimal Ms that are discovered by doing cross-validation are shown in the Results section of this paper.
   
-  // Include the chart here
   
   \subsection{Performing linear regression}
   
@@ -205,11 +207,95 @@
   
   \subsection{Result evaluation}
   
-  Bla-bla.
+  To evaluate the results we calculate the {\it mean deviation} for each prediction. For example if we have our prediction $VPrices_{1h-1d}$ for the next day with predictions for every hour, we calculate by how much did it deviate from the true value. Since we are already computing the price change instead of prices, calculating the mean deviation would give us the average percentage by which we were away from the actual value. If we express it in expression, the following formula is used to compute the mean deviation of the prediction:
+  
+ \begin{equation}\label{meandeviation}
+ 	\Delta = \frac{1}{||VPrice||} \sum_{i = 1}^{||VPrice||} |VPriceTrue_i - VPricePredicted_i|
+ \end{equation}
+ 
+ The reason we compute mean deviation is that it has the real world meaning and is more useful for traders than, for example, mean square error. 
+ 
+ The second value used for evaluation is side accuracy or simply {\it accuracy} from now on. The accuracy is the percentage of correctly predicted sides (positive or negative price change). The same evaluation value is used in the papers mentioned earlier \cite{related1} \cite{related2}. The following formula is used to compute the accuracy of the prediction:
+ \begin{equation}\label{accuracy}
+ 	Accuracy = \frac{\sum True Positive + \sum True Negative}{\sum All Predictions}
+ \end{equation}
+ 
+ Accuracy might be especially useful in cases when the deviation is small. For example with frame-width being 1h, the mean deviation will not be that big because price does not change much in 1 hour. In this case mean deviation stays small even if we predict the constant price. Accuracy helps us out in such cases and allows to get more insight of how good is the prediction.
+ 
+ Another reason of calculating the accuracy of predictions is to be able to compare the results to the results achieved in the earlier works \cite{related1} \cite{related2}. Since both papers used accuracy to evaluate their work, we can easily compare the results achieved.
 
   \section{Evaluation}
 
+  Here is the whole process step-by-step to evaluate how good the predictions using linear regression are:
+  \begin{enumerate}
+  	\item {\bf Set the frame-width and interval:} Frame-width determines how far do we want to do the predictions and interval determines the distance between individual predictions within that frame.
+  	\item {\bf Construct the input and output feature vectors:} Linear regression needs pairs (x,y) to learn the optimal function and to later evaluate how good is it. Depending on what we are feeding in, we need to construct price vectors, tweets vectors or both. The input x will be the respective data for the past time-period of length frame-width. And the output y will be the price informations for the coming time period of length frame-width. So, if we have frame-width of 1 day and interval of 1 hour, our input vector would contain price and/or tweet information for the last day and the output information would contain the price information for the coming day with interval of 1 hour. And every day would be one data instance. 
+  	\item {\bf Divide the dataset:} Now that we have a dataset of input and output pairs, we can compute and evaluate the optimal predicting function. For that we need to divide our dataset into training and validation sets. This part is actually done in iterations in order to find the average mean deviation (cross-validation). For example if we have three pairs, first we take 1,2 as training instances, learn predicting function from it, check the mean deviation and accuracy by testing the function on 3. Then we use 2 as validation and 1,3 as training set. We again compute the error and now use 1 as validation set. After all partitions of the set were used as validation set, we compute the average deviation and accuracy. This way we try to avoid bad training and testing data separation. According python libraries were used to do the dataset separation \cite{pythonkfold}.
+  	
+  	\item {\bf Compute optimal predicting function: } To compute the optimal predicting function, the comprehensive algorithm  from the Machine Learning lecture notes was followed. Here is the algorithm described in the notes \cite{mllecturenotes} with minor modifications:
+  	\begin{center}
+  		\parbox{300pt}{
+  			{\bf Data:} A training set $(x_i, y_i)_{i=1,...,N}$ of m-dimensional input vectors $x_i$ and k-dimensional target vectors $y_i$ 
+  			
+  			{\bf Result:} A $k \times m$ dimensional weight matrix $W_{opt}$ which solves the following linear regression objective:
+	  			\begin{equation}
+	  				W_{opt} = \operatorname*{argmin}_{W \in \mathbb{R}^{k  \times m}} \sum_{i=1}^{N} || W x_i - y_i || ^ 2
+	  			\end{equation} 
+  			{\bf Step 1: } Sort the feature vectors row-wise into an $N \times m$ matrix $\Phi$ and the targets into an $N \times k$ matrix Z.
+  			
+  			{\bf Step 2:} Compute the result by $W_{opt}' = (\Phi' \Phi)^{-1}\Phi'Z$
+  			
+  			{\bf Step 2*:} We perform slight modification in this step to avoid numerical issues like inverting the singular matrix. These issues can be avoided by taking pseudo-inverse \cite{mllecturenotes}:
+  			\begin{equation}
+  				W_{opt}' = pseudoInverse(\Phi) Z
+  			\end{equation}
+  			In python we could implement it the following way:
+  			\begin{equation}
+  				Wopt = (np.linalg.pinv(Phi).dot(Z)).T
+  			\end{equation} 
+  			where matrices are 2D numpy \cite{numpy} arrays.
+  			"This still gives optimal weights" \cite{mllecturenotes}.
+  			}
+ 
+    \end{center}
+  	
+  	\item {\bf Evaluate the optimal predicting function: } Now we that we have our optimal predicting function (more precisely, optimal matrix $W_{opt}$), we can evaluate it on validation set. For each predicted value $ W_{opt} x_{test}$ we calculate the mean deviation and in the end, we look at the average of all calculated mean deviations. We also calculate the average accuracy for all predictions.
+  	  	
+  \end{enumerate} 
+
   \subsection{Results}
+  
+  In this discussion, we will discuss the results achieved using the techniques explained earlier. As have already been mentioned above, we have three ways of predicting the price using linear regression or to be more precise, we have three different inputs into our algorithm. In all three cases our goal is to predict future price, thus output will always be a price vector (\ref{pricevectors}). First we try to predict the price using only the old price data, thus the input will be the price vector. Then we add the sentiment data of Twitter posts, that is we append tweet vector (\ref{tweetvectors}) to the price vector and see how does our predictions change by analyzing the error of predicting function. And thirdly, we use only Twitter data, thus input instances will be tweet vectors only. Throughout the process, we evaluate the performance by computing mean deviation \eqref{meandeviation} and accuracy \eqref{accuracy} for our predictions. In order to avoid by (un)luckily choosing (not)good training and testing data, we do cross validation and show the average mean deviation and accuracy. In our case, we took 4 iterations (75/25 split). Here is the pseudo-code of how this was done:
+  
+  \begin{algorithm}
+  	\caption{Fair prediction evaluation}
+  	\begin{algorithmic} 
+  		\REQUIRE $\Phi \leftarrow$ All Inputs, $Z \leftarrow$ All Outputs
+  		\ENSURE $Z_i$ is corresponding output of $\Phi_i$ 
+  		\STATE 
+  		$kf \leftarrow KFold(n\_splits=4)$ \cite{pythonkfold}
+  		\STATE $meanDeviations \leftarrow [\ ]$
+  		\STATE $accuracies \leftarrow [\ ]$
+  		\FOR{$train\_index,\ test\_index\ {\bf in}\ kf.split(\Phi)$}
+  		\STATE $\Phi_{train} \leftarrow \Phi[train\_index]$
+  		\STATE $Z_{train} \leftarrow Z[train\_index]$
+  		\STATE $\Phi_{test} \leftarrow \Phi[test\_index]$
+  		\STATE $Z_{test} \leftarrow Z[test\_index]$
+  		\STATE $W_{opt}  \leftarrow getOptimalPredicting(\Phi_{train}, Z_{train})$
+  		\STATE $dev,\ acc \leftarrow evaluateOptimal(W_{opt}, \Phi_{test}, Z_{test})$
+  		\STATE $ meanDeviations{\bf .append}(dev) $
+  		\STATE $ accuracies{\bf .append}(acc) $
+  		\ENDFOR
+  		\STATE $meanDeviation \leftarrow {\bf average}(meanDeviations)$
+  		\STATE $accuracy \leftarrow {\bf average}(accuracies)$
+  	\end{algorithmic}
+  \end{algorithm}
+  
+  \subsubsection{Using price data only}
+  \subsubsection{Using price and Twitter data}
+  First of all, before we can proceed to computing and evaluating the optimal predicting function, we need to find the optimal number of partitions \eqref{partitionsInTweetVector} in the tweet vector.
+  \subsubsection{Using Twitter data only}
+  
   
   \subsection{Discussion}
 
