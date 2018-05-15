@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.3.12)  12 MAY 2018 01:19
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.3.12)  13 MAY 2018 22:41
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -54,39 +54,73 @@ Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 \Gm@layoutvoffset=\dimen110
 \Gm@dimlist=\toks15
 )
+(/usr/share/texlive/texmf-dist/tex/latex/caption/caption.sty
+Package: caption 2016/02/21 v3.3-144 Customizing captions (AR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/caption/caption3.sty
+Package: caption3 2016/02/04 v1.7-139 caption3 kernel (AR)
+Package caption3 Info: TeX engine: e-TeX on input line 67.
+\captionmargin=\dimen111
+\captionmargin@=\dimen112
+\captionwidth=\dimen113
+\caption@tempdima=\dimen114
+\caption@indent=\dimen115
+\caption@parindent=\dimen116
+\caption@hangindent=\dimen117
+)
+\c@ContinuedFloat=\count90
+)
+(/usr/share/texlive/texmf-dist/tex/latex/tools/longtable.sty
+Package: longtable 2014/10/28 v4.11 Multi-page Table package (DPC)
+\LTleft=\skip43
+\LTright=\skip44
+\LTpre=\skip45
+\LTpost=\skip46
+\LTchunksize=\count91
+\LTcapwidth=\dimen118
+\LT@head=\box26
+\LT@firsthead=\box27
+\LT@foot=\box28
+\LT@lastfoot=\box29
+\LT@cols=\count92
+\LT@rows=\count93
+\c@LT@tables=\count94
+\c@LT@chunks=\count95
+\LT@p@ftn=\toks16
+)
 (/usr/share/texlive/texmf-dist/tex/latex/algorithms/algorithm.sty
 Package: algorithm 2009/08/24 v0.1 Document Style `algorithm' - floating enviro
 nment
 
 (/usr/share/texlive/texmf-dist/tex/latex/float/float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
-\c@float@type=\count90
-\float@exts=\toks16
-\float@box=\box26
-\@float@everytoks=\toks17
-\@floatcapt=\box27
+\c@float@type=\count96
+\float@exts=\toks17
+\float@box=\box30
+\@float@everytoks=\toks18
+\@floatcapt=\box31
 )
 (/usr/share/texlive/texmf-dist/tex/latex/base/ifthen.sty
 Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
 )
-\@float@every@algorithm=\toks18
-\c@algorithm=\count91
+\@float@every@algorithm=\toks19
+\c@algorithm=\count97
 )
 (/usr/share/texlive/texmf-dist/tex/latex/algorithms/algorithmic.sty
 Package: algorithmic 2009/08/24 v0.1 Document Style `algorithmic'
-\c@ALC@unique=\count92
-\c@ALC@line=\count93
-\c@ALC@rem=\count94
-\c@ALC@depth=\count95
-\ALC@tlm=\skip43
-\algorithmicindent=\skip44
+\c@ALC@unique=\count98
+\c@ALC@line=\count99
+\c@ALC@rem=\count100
+\c@ALC@depth=\count101
+\ALC@tlm=\skip47
+\algorithmicindent=\skip48
 )
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amssymb.sty
 Package: amssymb 2013/01/14 v3.01 AMS font symbols
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty
 Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
-\@emptytoks=\toks19
+\@emptytoks=\toks20
 \symAMSa=\mathgroup4
 \symAMSb=\mathgroup5
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
@@ -94,7 +128,7 @@ LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 ))
 (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
 Package: amsmath 2016/03/03 v2.15a AMS math features
-\@mathmargin=\skip45
+\@mathmargin=\skip49
 
 For additional information on amsmath, use the `?' option.
 (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty
@@ -102,51 +136,51 @@ Package: amstext 2000/06/29 v2.01 AMS text
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
-\@emptytoks=\toks20
-\ex@=\dimen111
+\@emptytoks=\toks21
+\ex@=\dimen119
 ))
 (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
-\pmbraise@=\dimen112
+\pmbraise@=\dimen120
 )
 (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty
 Package: amsopn 1999/12/14 v2.01 operator names
 )
-\inf@bad=\count96
+\inf@bad=\count102
 LaTeX Info: Redefining \frac on input line 199.
-\uproot@=\count97
-\leftroot@=\count98
+\uproot@=\count103
+\leftroot@=\count104
 LaTeX Info: Redefining \overline on input line 297.
-\classnum@=\count99
-\DOTSCASE@=\count100
+\classnum@=\count105
+\DOTSCASE@=\count106
 LaTeX Info: Redefining \ldots on input line 394.
 LaTeX Info: Redefining \dots on input line 397.
 LaTeX Info: Redefining \cdots on input line 518.
-\Mathstrutbox@=\box28
-\strutbox@=\box29
-\big@size=\dimen113
+\Mathstrutbox@=\box32
+\strutbox@=\box33
+\big@size=\dimen121
 LaTeX Font Info:    Redeclaring font encoding OML on input line 630.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 631.
-\macc@depth=\count101
-\c@MaxMatrixCols=\count102
+\macc@depth=\count107
+\c@MaxMatrixCols=\count108
 \dotsspace@=\muskip10
-\c@parentequation=\count103
-\dspbrk@lvl=\count104
-\tag@help=\toks21
-\row@=\count105
-\column@=\count106
-\maxfields@=\count107
-\andhelp@=\toks22
-\eqnshift@=\dimen114
-\alignsep@=\dimen115
-\tagshift@=\dimen116
-\tagwidth@=\dimen117
-\totwidth@=\dimen118
-\lineht@=\dimen119
-\@envbody=\toks23
-\multlinegap=\skip46
-\multlinetaggap=\skip47
-\mathdisplay@stack=\toks24
+\c@parentequation=\count109
+\dspbrk@lvl=\count110
+\tag@help=\toks22
+\row@=\count111
+\column@=\count112
+\maxfields@=\count113
+\andhelp@=\toks23
+\eqnshift@=\dimen122
+\alignsep@=\dimen123
+\tagshift@=\dimen124
+\tagwidth@=\dimen125
+\totwidth@=\dimen126
+\lineht@=\dimen127
+\@envbody=\toks24
+\multlinegap=\skip50
+\multlinetaggap=\skip51
+\mathdisplay@stack=\toks25
 LaTeX Info: Redefining \[ on input line 2735.
 LaTeX Info: Redefining \] on input line 2736.
 )
@@ -179,10 +213,10 @@ Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
 (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
 Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
 )
-\Gread@gobject=\count108
+\Gread@gobject=\count114
 ))
-\Gin@req@height=\dimen120
-\Gin@req@width=\dimen121
+\Gin@req@height=\dimen128
+\Gin@req@width=\dimen129
 )
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/hyperref.sty
 Package: hyperref 2012/11/06 v6.83m Hypertext links for LaTeX
@@ -236,14 +270,14 @@ Package: auxhook 2011/03/04 v1.3 Hooks for auxiliary files (HO)
 (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/kvoptions.sty
 Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
 )
-\@linkdim=\dimen122
-\Hy@linkcounter=\count109
-\Hy@pagecounter=\count110
+\@linkdim=\dimen130
+\Hy@linkcounter=\count115
+\Hy@pagecounter=\count116
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/pd1enc.def
 File: pd1enc.def 2012/11/06 v6.83m Hyperref: PDFDocEncoding definition (HO)
 )
-\Hy@SavedSpaceFactor=\count111
+\Hy@SavedSpaceFactor=\count117
 
 (/usr/share/texlive/texmf-dist/tex/latex/latexconfig/hyperref.cfg
 File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
@@ -255,17 +289,17 @@ Package hyperref Info: Plain pages OFF on input line 4458.
 Package hyperref Info: Backreferencing OFF on input line 4463.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4688.
-\c@Hy@tempcnt=\count112
+\c@Hy@tempcnt=\count118
 
 (/usr/share/texlive/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip11
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
 LaTeX Info: Redefining \url on input line 5041.
-\XeTeXLinkMargin=\dimen123
-\Fld@menulength=\count113
-\Field@Width=\dimen124
-\Fld@charsize=\dimen125
+\XeTeXLinkMargin=\dimen131
+\Fld@menulength=\count119
+\Field@Width=\dimen132
+\Fld@charsize=\dimen133
 Package hyperref Info: Hyper figures OFF on input line 6295.
 Package hyperref Info: Link nesting OFF on input line 6300.
 Package hyperref Info: Hyper index ON on input line 6303.
@@ -275,45 +309,45 @@ Package hyperref Info: Link coloring with OCG OFF on input line 6320.
 Package hyperref Info: PDF/A mode OFF on input line 6325.
 LaTeX Info: Redefining \ref on input line 6365.
 LaTeX Info: Redefining \pageref on input line 6369.
-\Hy@abspage=\count114
-\c@Item=\count115
-\c@Hfootnote=\count116
+\Hy@abspage=\count120
+\c@Item=\count121
+\c@Hfootnote=\count122
 )
 
 Package hyperref Message: Driver: hpdftex.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/hpdftex.def
 File: hpdftex.def 2012/11/06 v6.83m Hyperref driver for pdfTeX
-\Fld@listcount=\count117
-\c@bookmark@seq@number=\count118
+\Fld@listcount=\count123
+\c@bookmark@seq@number=\count124
 
 (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty
 Package: rerunfilecheck 2011/04/15 v1.7 Rerun checks for auxiliary files (HO)
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 82.
 )
-\Hy@SectionHShift=\skip48
+\Hy@SectionHShift=\skip52
 )
-Package hyperref Info: Option `colorlinks' set `true' on input line 32.
+Package hyperref Info: Option `colorlinks' set `true' on input line 34.
 
 (./bsc-sample.aux)
 \openout1 = `bsc-sample.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 34.
-LaTeX Font Info:    ... okay on input line 34.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 34.
-LaTeX Font Info:    ... okay on input line 34.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 34.
-LaTeX Font Info:    ... okay on input line 34.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 34.
-LaTeX Font Info:    ... okay on input line 34.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 34.
-LaTeX Font Info:    ... okay on input line 34.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 34.
-LaTeX Font Info:    ... okay on input line 34.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 34.
-LaTeX Font Info:    ... okay on input line 34.
-LaTeX Font Info:    Try loading font information for OT1+phv on input line 34.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 36.
+LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 36.
+LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 36.
+LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 36.
+LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 36.
+LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 36.
+LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 36.
+LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Try loading font information for OT1+phv on input line 36.
  (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1phv.fd
 File: ot1phv.fd 2001/06/04 scalable font definitions for OT1/phv.
 )
@@ -351,19 +385,28 @@ File: ot1phv.fd 2001/06/04 scalable font definitions for OT1/phv.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: float package is loaded.
+Package caption Info: hyperref package is loaded.
+Package caption Info: longtable package is loaded.
+(/usr/share/texlive/texmf-dist/tex/latex/caption/ltcaption.sty
+Package: ltcaption 2013/06/09 v1.4-94 longtable captions (AR)
+)
+Package caption Info: End \AtBeginDocument code.
+
 (/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count119
-\scratchdimen=\dimen126
-\scratchbox=\box30
-\nofMPsegments=\count120
-\nofMParguments=\count121
-\everyMPshowfont=\toks25
-\MPscratchCnt=\count122
-\MPscratchDim=\dimen127
-\MPnumerator=\count123
-\makeMPintoPDFobject=\count124
-\everyMPtoPDFconversion=\toks26
+\scratchcounter=\count125
+\scratchdimen=\dimen134
+\scratchbox=\box34
+\nofMPsegments=\count126
+\nofMParguments=\count127
+\everyMPshowfont=\toks26
+\MPscratchCnt=\count128
+\MPscratchDim=\dimen135
+\MPnumerator=\count129
+\makeMPintoPDFobject=\count130
+\everyMPtoPDFconversion=\toks27
 ) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
 
@@ -379,7 +422,7 @@ G,.JBIG2,.JB2,.eps]
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-\AtBeginShipoutBox=\box31
+\AtBeginShipoutBox=\box35
 
 (/usr/share/texlive/texmf-dist/tex/latex/graphics/color.sty
 Package: color 2016/01/03 v1.1b Standard LaTeX Color (DPC)
@@ -389,7 +432,7 @@ File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
 )
 Package color Info: Driver file: pdftex.def on input line 143.
 )
-Package hyperref Info: Link coloring ON on input line 34.
+Package hyperref Info: Link coloring ON on input line 36.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
@@ -397,32 +440,32 @@ Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
-\c@section@level=\count125
+\c@section@level=\count131
 )
-LaTeX Info: Redefining \ref on input line 34.
-LaTeX Info: Redefining \pageref on input line 34.
-LaTeX Info: Redefining \nameref on input line 34.
+LaTeX Info: Redefining \ref on input line 36.
+LaTeX Info: Redefining \pageref on input line 36.
+LaTeX Info: Redefining \nameref on input line 36.
 
 (./bsc-sample.out) (./bsc-sample.out)
 \@outlinefile=\write3
 \openout3 = `bsc-sample.out'.
 
 
-<bsc-logo.pdf, id=108, 233.87375pt x 84.315pt>
+<bsc-logo.pdf, id=136, 233.87375pt x 84.315pt>
 File: bsc-logo.pdf Graphic file (type pdf)
  <use bsc-logo.pdf>
-Package pdftex.def Info: bsc-logo.pdf used on input line 40.
+Package pdftex.def Info: bsc-logo.pdf used on input line 42.
 (pdftex.def)             Requested size: 163.71048pt x 59.02008pt.
 LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <20.74> not available
-(Font)              Font shape `OT1/phv/b/n' tried instead on input line 45.
+(Font)              Font shape `OT1/phv/b/n' tried instead on input line 47.
 LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <14.4> not available
-(Font)              Font shape `OT1/phv/b/n' tried instead on input line 54.
-LaTeX Font Info:    Try loading font information for U+msa on input line 64.
+(Font)              Font shape `OT1/phv/b/n' tried instead on input line 56.
+LaTeX Font Info:    Try loading font information for U+msa on input line 66.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 64.
+LaTeX Font Info:    Try loading font information for U+msb on input line 66.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
@@ -439,31 +482,7 @@ LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <10.95> not available
 
 [4]
 LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <12> not available
-(Font)              Font shape `OT1/phv/b/n' tried instead on input line 120.
-Missing character: There is no ‚ in font phvr7t!
-Missing character: There is no Ä in font phvr7t!
-Missing character: There is no ú in font phvr7t!
-Missing character: There is no ‚ in font phvr7t!
-Missing character: There is no Ä in font phvr7t!
-Missing character: There is no ù in font phvr7t!
-Missing character: There is no ‚ in font phvr7t!
-Missing character: There is no Ä in font phvr7t!
-Missing character: There is no ô in font phvr7t!
-Missing character: There is no ‚ in font phvr7t!
-Missing character: There is no Ä in font phvr7t!
-Missing character: There is no ô in font phvr7t!
-Missing character: There is no ‚ in font phvr7t!
-Missing character: There is no Ä in font phvr7t!
-Missing character: There is no ú in font phvr7t!
-Missing character: There is no ‚ in font phvr7t!
-Missing character: There is no Ä in font phvr7t!
-Missing character: There is no ù in font phvr7t!
-Missing character: There is no ‚ in font phvr7t!
-Missing character: There is no Ä in font phvr7t!
-Missing character: There is no ô in font phvr7t!
-Missing character: There is no ‚ in font phvr7t!
-Missing character: There is no Ä in font phvr7t!
-Missing character: There is no ô in font phvr7t!
+(Font)              Font shape `OT1/phv/b/n' tried instead on input line 116.
 Missing character: There is no ‚ in font phvr7t!
 Missing character: There is no Ä in font phvr7t!
 Missing character: There is no ú in font phvr7t!
@@ -475,7 +494,10 @@ Missing character: There is no ù in font phvr7t!
 ]
 Missing character: There is no ‚ in font phvr7t!
 Missing character: There is no Ä in font phvr7t!
-Missing character: There is no ô in font phvr7t!
+Missing character: There is no ú in font phvr7t!
+Missing character: There is no ‚ in font phvr7t!
+Missing character: There is no Ä in font phvr7t!
+Missing character: There is no ù in font phvr7t!
  [2]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
@@ -483,137 +505,285 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 
 Missing character: There is no ‚ in font phvr7t!
 Missing character: There is no Ä in font phvr7t!
-Missing character: There is no ú in font phvr7t!
-Missing character: There is no ‚ in font phvr7t!
-Missing character: There is no Ä in font phvr7t!
 Missing character: There is no ¶ in font phvr7t!
-Missing character: There is no ‚ in font phvr7t!
-Missing character: There is no Ä in font phvr7t!
-Missing character: There is no ù in font phvr7t!
-Missing character: There is no ‚ in font phvr7t!
-Missing character: There is no Ä in font phvr7t!
-Missing character: There is no ô in font phvr7t!
+[3]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\@ifnextchar' on input line 157.
+(hyperref)                removing `\@ifnextchar' on input line 161.
 
-Missing character: There is no ‚ in font phvr7t!
-Missing character: There is no Ä in font phvr7t!
-Missing character: There is no ô in font phvr7t!
-Missing character: There is no ‚ in font phvr7t!
-Missing character: There is no Ä in font phvr7t!
-Missing character: There is no ô in font phvr7t!
-Missing character: There is no ‚ in font phvr7t!
-Missing character: There is no Ä in font phvr7t!
-Missing character: There is no ú in font phvr7t!
-Missing character: There is no ‚ in font phvr7t!
-Missing character: There is no Ä in font phvr7t!
-Missing character: There is no ô in font phvr7t!
-Missing character: There is no ‚ in font phvr7t!
-Missing character: There is no Ä in font phvr7t!
-Missing character: There is no ù in font phvr7t!
-[3]
-Missing character: There is no ‚ in font phvr7t!
-Missing character: There is no Ä in font phvr7t!
-Missing character: There is no ô in font phvr7t!
-Missing character: There is no ‚ in font phvr7t!
-Missing character: There is no Ä in font phvr7t!
-Missing character: There is no ú in font phvr7t!
-Missing character: There is no ‚ in font phvr7t!
-Missing character: There is no Ä in font phvr7t!
-Missing character: There is no ù in font phvr7t!
-Missing character: There is no ‚ in font phvr7t!
-Missing character: There is no Ä in font phvr7t!
-Missing character: There is no ô in font phvr7t!
-Missing character: There is no ‚ in font phvr7t!
-Missing character: There is no Ä in font phvr7t!
-Missing character: There is no ú in font phvr7t!
-Missing character: There is no ‚ in font phvr7t!
-Missing character: There is no Ä in font phvr7t!
-Missing character: There is no ô in font phvr7t!
-Missing character: There is no ‚ in font phvr7t!
-Missing character: There is no Ä in font phvr7t!
-Missing character: There is no ù in font phvr7t!
-Missing character: There is no ‚ in font phvr7t!
-Missing character: There is no Ä in font phvr7t!
-Missing character: There is no ô in font phvr7t!
-Missing character: There is no ‚ in font phvr7t!
-Missing character: There is no Ä in font phvr7t!
-Missing character: There is no ô in font phvr7t!
-Missing character: There is no ‚ in font phvr7t!
-Missing character: There is no Ä in font phvr7t!
-Missing character: There is no ô in font phvr7t!
-Missing character: There is no ‚ in font phvr7t!
-Missing character: There is no Ä in font phvr7t!
-Missing character: There is no ú in font phvr7t!
-Missing character: There is no ‚ in font phvr7t!
-Missing character: There is no Ä in font phvr7t!
-Missing character: There is no ù in font phvr7t!
-Missing character: There is no ‚ in font phvr7t!
-Missing character: There is no Ä in font phvr7t!
-Missing character: There is no ú in font phvr7t!
-Missing character: There is no ‚ in font phvr7t!
-Missing character: There is no Ä in font phvr7t!
-Missing character: There is no ù in font phvr7t!
-Missing character: There is no ‚ in font phvr7t!
-Missing character: There is no Ä in font phvr7t!
-Missing character: There is no ú in font phvr7t!
-Missing character: There is no ‚ in font phvr7t!
-Missing character: There is no Ä in font phvr7t!
-Missing character: There is no ù in font phvr7t!
-Missing character: There is no ‚ in font phvr7t!
-Missing character: There is no Ä in font phvr7t!
-Missing character: There is no ú in font phvr7t!
-Missing character: There is no ‚ in font phvr7t!
-Missing character: There is no Ä in font phvr7t!
-Missing character: There is no ù in font phvr7t!
-Missing character: There is no ‚ in font phvr7t!
-Missing character: There is no Ä in font phvr7t!
-Missing character: There is no ô in font phvr7t!
- [4]
+[4]
 LaTeX Font Info:    Font shape `OT1/phv/m/it' in size <10.95> not available
-(Font)              Font shape `OT1/phv/m/sl' tried instead on input line 180.
- [5]
-Missing character: There is no ‚ in font phvr7t!
-Missing character: There is no Ä in font phvr7t!
-Missing character: There is no ô in font phvr7t!
-Missing character: There is no ‚ in font phvr7t!
-Missing character: There is no Ä in font phvr7t!
-Missing character: There is no ô in font phvr7t!
- [6] [7] [8]
+(Font)              Font shape `OT1/phv/m/sl' tried instead on input line 186.
+ [5] [6] [7] [8] [9]
 Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on in
-put line 271.
- [9] [10] (./bsc-sample.bbl
-Overfull \hbox (31.75525pt too wide) in paragraph at lines 43--47
+put line 281.
+ [10]
+LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <10> not available
+(Font)              Font shape `OT1/phv/b/n' tried instead on input line 327.
+ [11]
+<./data/PriceAndTweets/ErrorVsTweetsN_2to500.png, id=370, 512.3943pt x 346.896p
+t>
+File: ./data/PriceAndTweets/ErrorVsTweetsN_2to500.png Graphic file (type png)
+ <use ./data/PriceAndTweets/ErrorVsTweetsN_2to500.png>
+Package pdftex.def Info: ./data/PriceAndTweets/ErrorVsTweetsN_2to500.png used o
+n input line 339.
+(pdftex.def)             Requested size: 243.27419pt x 164.6979pt.
+
+<./data/PriceAndTweets/AccuracyVsTweetsN_2to500.png, id=372, 486.3771pt x 352.6
+776pt>
+File: ./data/PriceAndTweets/AccuracyVsTweetsN_2to500.png Graphic file (type png
+)
+ <use ./data/PriceAndTweets/AccuracyVsTweetsN_2to500.png>
+Package pdftex.def Info: ./data/PriceAndTweets/AccuracyVsTweetsN_2to500.png use
+d on input line 340.
+(pdftex.def)             Requested size: 226.19888pt x 164.01491pt.
+
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 341.
+See the caption package documentation for explanation.
+
+
+Overfull \hbox (45.00311pt too wide) in paragraph at lines 339--341
+[][] [] 
+ []
+
+
+<./data/PriceAndTweets/ErrorVsTweetsN_500to5000.png, id=377, 462.528pt x 346.89
+6pt>
+File: ./data/PriceAndTweets/ErrorVsTweetsN_500to5000.png Graphic file (type png
+)
+ <use ./data/PriceAndTweets/ErrorVsTweetsN_500to5000.png>
+Package pdftex.def Info: ./data/PriceAndTweets/ErrorVsTweetsN_500to5000.png use
+d on input line 352.
+(pdftex.def)             Requested size: 243.27419pt x 182.45659pt.
+
+<./data/PriceAndTweets/AccuracyVsTweetsN_500to5000.png, id=378, 462.528pt x 346
+.896pt>
+File: ./data/PriceAndTweets/AccuracyVsTweetsN_500to5000.png Graphic file (type 
+png)
+ <use ./data/PriceAndTweets/AccuracyVsTweetsN_500to5000.png>
+Package pdftex.def Info: ./data/PriceAndTweets/AccuracyVsTweetsN_500to5000.png 
+used on input line 353.
+(pdftex.def)             Requested size: 226.19888pt x 169.65234pt.
+
+<./data/PriceAndTweets/ErrorVsTweetsN_500to20000.png, id=379, 462.528pt x 346.8
+96pt>
+File: ./data/PriceAndTweets/ErrorVsTweetsN_500to20000.png Graphic file (type pn
+g)
+ <use ./data/PriceAndTweets/ErrorVsTweetsN_500to20000.png>
+Package pdftex.def Info: ./data/PriceAndTweets/ErrorVsTweetsN_500to20000.png us
+ed on input line 354.
+(pdftex.def)             Requested size: 243.27419pt x 182.45659pt.
+
+<./data/PriceAndTweets/AccuracyVsTweetsN_500to20000.png, id=380, 462.528pt x 34
+6.896pt>
+File: ./data/PriceAndTweets/AccuracyVsTweetsN_500to20000.png Graphic file (type
+ png)
+ <use ./data/PriceAndTweets/AccuracyVsTweetsN_500to20000.png>
+Package pdftex.def Info: ./data/PriceAndTweets/AccuracyVsTweetsN_500to20000.png
+ used on input line 355.
+(pdftex.def)             Requested size: 226.19888pt x 169.65234pt.
+
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 356.
+See the caption package documentation for explanation.
+
+
+Overfull \hbox (45.00311pt too wide) in paragraph at lines 352--356
+[][] []
+ []
+
+
+Overfull \hbox (45.00311pt too wide) in paragraph at lines 352--356
+[] [] 
+ []
+
+[12 <./data/PriceAndTweets/ErrorVsTweetsN_2to500.png> <./data/PriceAndTweets/Ac
+curacyVsTweetsN_2to500.png>]
+<./data/Tweets/ErrorVsTweetsN_2to500.png, id=390, 579.6054pt x 380.8629pt>
+File: ./data/Tweets/ErrorVsTweetsN_2to500.png Graphic file (type png)
+
+<use ./data/Tweets/ErrorVsTweetsN_2to500.png>
+Package pdftex.def Info: ./data/Tweets/ErrorVsTweetsN_2to500.png used on input 
+line 389.
+(pdftex.def)             Requested size: 243.27419pt x 159.8567pt.
+
+<./data/Tweets/AccuracyVsTweetsN_2to500.png, id=391, 462.528pt x 346.896pt>
+File: ./data/Tweets/AccuracyVsTweetsN_2to500.png Graphic file (type png)
+
+<use ./data/Tweets/AccuracyVsTweetsN_2to500.png>
+Package pdftex.def Info: ./data/Tweets/AccuracyVsTweetsN_2to500.png used on inp
+ut line 390.
+(pdftex.def)             Requested size: 226.19888pt x 169.65234pt.
+
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 391.
+See the caption package documentation for explanation.
+
+
+Overfull \hbox (45.00311pt too wide) in paragraph at lines 389--391
+[][] [] 
+ []
+
+[13 <./data/PriceAndTweets/ErrorVsTweetsN_500to5000.png> <./data/PriceAndTweets
+/AccuracyVsTweetsN_500to5000.png> <./data/PriceAndTweets/ErrorVsTweetsN_500to20
+000.png> <./data/PriceAndTweets/AccuracyVsTweetsN_500to20000.png>]
+<./data/Tweets/ErrorVsTweetsN_500to5000.png, id=406, 462.528pt x 346.896pt>
+File: ./data/Tweets/ErrorVsTweetsN_500to5000.png Graphic file (type png)
+
+<use ./data/Tweets/ErrorVsTweetsN_500to5000.png>
+Package pdftex.def Info: ./data/Tweets/ErrorVsTweetsN_500to5000.png used on inp
+ut line 423.
+(pdftex.def)             Requested size: 234.73654pt x 176.05182pt.
+
+<./data/Tweets/AccuracyVsTweetsN_500to5000.png, id=407, 462.528pt x 346.896pt>
+File: ./data/Tweets/AccuracyVsTweetsN_500to5000.png Graphic file (type png)
+
+<use ./data/Tweets/AccuracyVsTweetsN_500to5000.png>
+Package pdftex.def Info: ./data/Tweets/AccuracyVsTweetsN_500to5000.png used on 
+input line 424.
+(pdftex.def)             Requested size: 234.73654pt x 176.05182pt.
+
+<./data/Tweets/ErrorVsTweetsN_500to20000.png, id=408, 462.528pt x 346.896pt>
+File: ./data/Tweets/ErrorVsTweetsN_500to20000.png Graphic file (type png)
+
+<use ./data/Tweets/ErrorVsTweetsN_500to20000.png>
+Package pdftex.def Info: ./data/Tweets/ErrorVsTweetsN_500to20000.png used on in
+put line 425.
+(pdftex.def)             Requested size: 234.73654pt x 176.05182pt.
+
+<./data/Tweets/AccuracyVsTweetsN_500to20000.png, id=409, 462.528pt x 346.896pt>
+File: ./data/Tweets/AccuracyVsTweetsN_500to20000.png Graphic file (type png)
+<use ./data/Tweets/AccuracyVsTweetsN_500to20000.png>
+Package pdftex.def Info: ./data/Tweets/AccuracyVsTweetsN_500to20000.png used on
+ input line 426.
+(pdftex.def)             Requested size: 234.73654pt x 176.05182pt.
+
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 427.
+See the caption package documentation for explanation.
+
+
+Overfull \hbox (45.00313pt too wide) in paragraph at lines 423--427
+[][] []
+ []
+
+
+Overfull \hbox (45.00313pt too wide) in paragraph at lines 423--427
+[] [] 
+ []
+
+[14 <./data/Tweets/ErrorVsTweetsN_2to500.png> <./data/Tweets/AccuracyVsTweetsN_
+2to500.png>] [15 <./data/Tweets/ErrorVsTweetsN_500to5000.png> <./data/Tweets/Ac
+curacyVsTweetsN_500to5000.png> <./data/Tweets/ErrorVsTweetsN_500to20000.png> <.
+/data/Tweets/AccuracyVsTweetsN_500to20000.png>] [16] [17] (./bsc-sample.bbl
+Underfull \hbox (badness 10000) in paragraph at lines 39--43
+[]\OT1/phv/m/n/10.95 BTCMANAGER.  https://btcmanager.com/what-are-whales-how-do
+-they-affect-
+ []
+
+
+Overfull \hbox (31.75525pt too wide) in paragraph at lines 49--53
 []\OT1/phv/m/n/10.95 Official Twit-ter API.  https://developer.twitter.com/en/d
 ocs/tweets/search/overview/standard,
  []
 
 
-Underfull \hbox (badness 6842) in paragraph at lines 49--52
+Underfull \hbox (badness 6842) in paragraph at lines 55--58
 []\OT1/phv/m/n/10.95 Jefferson-Henrique.  https://github.com/jefferson-henrique
 /getoldtweets-python,
  []
 
-)
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 316.
- [11]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 316.
+
+Underfull \hbox (badness 3260) in paragraph at lines 89--93
+[]\OT1/phv/m/n/10.95 Business In-sider.  https://www.businessinsider.de/cryptoc
+urrency-bitcoin-slang-
+ []
+
+) [18]
+Underfull \vbox (badness 10000) detected at line 529
+ []
+
+[19] [20]
+<./data/PriceAndTweets/ErrorVsTweetsN_1000to300000.png, id=470, 462.528pt x 346
+.896pt>
+File: ./data/PriceAndTweets/ErrorVsTweetsN_1000to300000.png Graphic file (type 
+png)
+ <use ./data/PriceAndTweets/ErrorVsTweetsN_1000to300000.png>
+Package pdftex.def Info: ./data/PriceAndTweets/ErrorVsTweetsN_1000to300000.png 
+used on input line 719.
+(pdftex.def)             Requested size: 234.73654pt x 176.05182pt.
+
+<./data/PriceAndTweets/AccuracyVsTweetsN_1000to300000.png, id=471, 462.528pt x 
+346.896pt>
+File: ./data/PriceAndTweets/AccuracyVsTweetsN_1000to300000.png Graphic file (ty
+pe png)
+ <use ./data/PriceAndTweets/AccuracyVsTweetsN_1000to300000.png>
+Package pdftex.def Info: ./data/PriceAndTweets/AccuracyVsTweetsN_1000to300000.p
+ng used on input line 720.
+(pdftex.def)             Requested size: 234.73654pt x 176.05182pt.
+
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 721.
+See the caption package documentation for explanation.
+
+
+Overfull \hbox (45.00313pt too wide) in paragraph at lines 719--721
+[][] [] 
+ []
+
+[21]
+<./data/Tweets/ErrorVsTweetsN_1000to300000.png, id=479, 462.528pt x 346.896pt>
+File: ./data/Tweets/ErrorVsTweetsN_1000to300000.png Graphic file (type png)
+
+<use ./data/Tweets/ErrorVsTweetsN_1000to300000.png>
+Package pdftex.def Info: ./data/Tweets/ErrorVsTweetsN_1000to300000.png used on 
+input line 733.
+(pdftex.def)             Requested size: 243.27419pt x 182.45659pt.
+
+<./data/Tweets/AccuracyVsTweetsN_1000to300000.png, id=480, 462.528pt x 346.896p
+t>
+File: ./data/Tweets/AccuracyVsTweetsN_1000to300000.png Graphic file (type png)
+ <use ./data/Tweets/AccuracyVsTweetsN_1000to300000.png>
+Package pdftex.def Info: ./data/Tweets/AccuracyVsTweetsN_1000to300000.png used 
+on input line 734.
+(pdftex.def)             Requested size: 226.19888pt x 169.65234pt.
+
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 735.
+See the caption package documentation for explanation.
+
+
+Overfull \hbox (45.00311pt too wide) in paragraph at lines 733--735
+[][] [] 
+ []
+
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 739.
+[22 <./data/PriceAndTweets/ErrorVsTweetsN_1000to300000.png> <./data/PriceAndTwe
+ets/AccuracyVsTweetsN_1000to300000.png> <./data/Tweets/ErrorVsTweetsN_1000to300
+000.png> <./data/Tweets/AccuracyVsTweetsN_1000to300000.png>]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 739.
  (./bsc-sample.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 316.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 316.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 739.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 739.
 Package rerunfilecheck Info: File `bsc-sample.out' has not changed.
-(rerunfilecheck)             Checksum: 19451DBC86DDF9B29A5E7A165BD6B4D9;1913.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 316.
+(rerunfilecheck)             Checksum: 5DABE2DE480C634847BB1E991063C7D2;2392.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 739.
  ) 
 Here is how much of TeX's memory you used:
- 6946 strings out of 493029
- 99309 string characters out of 6136234
- 197218 words of memory out of 5000000
- 10286 multiletter control sequences out of 15000+600000
- 26278 words of font info for 60 fonts, out of 8000000 for 9000
+ 8234 strings out of 493029
+ 124239 string characters out of 6136234
+ 279834 words of memory out of 5000000
+ 11513 multiletter control sequences out of 15000+600000
+ 29671 words of font info for 64 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 29i,7n,32p,1950b,467s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 36i,9n,49p,1964b,562s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
 e/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texm
 f-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist
@@ -628,10 +798,10 @@ share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/s
 hare/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/share/texlive
 /texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/share/texlive/texmf-dist/
 fonts/type1/urw/helvetic/uhvro8a.pfb>
-Output written on bsc-sample.pdf (15 pages, 171045 bytes).
+Output written on bsc-sample.pdf (26 pages, 577600 bytes).
 PDF statistics:
- 386 PDF objects out of 1000 (max. 8388607)
- 349 compressed objects within 4 object streams
- 91 named destinations out of 1000 (max. 500000)
- 214 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 566 PDF objects out of 1000 (max. 8388607)
+ 484 compressed objects within 5 object streams
+ 127 named destinations out of 1000 (max. 500000)
+ 350 words of extra memory for PDF output out of 10000 (max. 10000000)
 

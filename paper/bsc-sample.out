@@ -4,7 +4,7 @@
 \BOOKMARK [2][-]{subsection.1.3}{Difference between crypto-market and other financial markets}{section.1}% 4
 \BOOKMARK [2][-]{subsection.1.4}{Twitter as source of emotional state}{section.1}% 5
 \BOOKMARK [1][-]{section.2}{Related Work}{}% 6
-\BOOKMARK [2][-]{subsection.2.1}{Unrelated prediction algorithms}{section.2}% 7
+\BOOKMARK [2][-]{subsection.2.1}{Prediction algorithms}{section.2}% 7
 \BOOKMARK [2][-]{subsection.2.2}{Closely related work}{section.2}% 8
 \BOOKMARK [3][-]{subsubsection.2.2.1}{Predicting Bitcoin price fluctuations with Twitter sentiment analysis related1}{subsection.2.2}% 9
 \BOOKMARK [3][-]{subsubsection.2.2.2}{Algorithmic Trading of Cryptocurrency Based on Twitter Sentiment Analysis related2}{subsection.2.2}% 10
@@ -15,12 +15,19 @@
 \BOOKMARK [3][-]{subsubsection.3.3.1}{Price vectors}{subsection.3.3}% 15
 \BOOKMARK [3][-]{subsubsection.3.3.2}{Tweet vectors}{subsection.3.3}% 16
 \BOOKMARK [2][-]{subsection.3.4}{Performing linear regression}{section.3}% 17
-\BOOKMARK [2][-]{subsection.3.5}{Result evaluation}{section.3}% 18
-\BOOKMARK [1][-]{section.4}{Evaluation}{}% 19
-\BOOKMARK [2][-]{subsection.4.1}{Results}{section.4}% 20
-\BOOKMARK [3][-]{subsubsection.4.1.1}{Using price data only}{subsection.4.1}% 21
-\BOOKMARK [3][-]{subsubsection.4.1.2}{Using price and Twitter data}{subsection.4.1}% 22
-\BOOKMARK [3][-]{subsubsection.4.1.3}{Using Twitter data only}{subsection.4.1}% 23
-\BOOKMARK [2][-]{subsection.4.2}{Discussion}{section.4}% 24
-\BOOKMARK [1][-]{section.5}{Conclusions}{}% 25
-\BOOKMARK [1][-]{section.6}{Future Work}{}% 26
+\BOOKMARK [2][-]{subsection.3.5}{Evaluation methods}{section.3}% 18
+\BOOKMARK [2][-]{subsection.3.6}{Wrapping up}{section.3}% 19
+\BOOKMARK [1][-]{section.4}{Methods}{}% 20
+\BOOKMARK [2][-]{subsection.4.1}{Data set division}{section.4}% 21
+\BOOKMARK [1][-]{section.5}{Results}{}% 22
+\BOOKMARK [2][-]{subsection.5.1}{Using price data only}{section.5}% 23
+\BOOKMARK [2][-]{subsection.5.2}{Using price and Twitter data}{section.5}% 24
+\BOOKMARK [2][-]{subsection.5.3}{Using Twitter data only}{section.5}% 25
+\BOOKMARK [2][-]{subsection.5.4}{Summary}{section.5}% 26
+\BOOKMARK [2][-]{subsection.5.5}{Discussion}{section.5}% 27
+\BOOKMARK [1][-]{section.6}{Conclusions and Future Work}{}% 28
+\BOOKMARK [1][-]{section.7}{Appendices}{}% 29
+\BOOKMARK [2][-]{subsection.7.1}{Appendix A: Rating of crypto-terminology}{section.7}% 30
+\BOOKMARK [2][-]{subsection.7.2}{Appendix B: Performance of predictions}{section.7}% 31
+\BOOKMARK [3][-]{subsubsection.7.2.1}{Using combined data}{subsection.7.2}% 32
+\BOOKMARK [3][-]{subsubsection.7.2.2}{Using Twitter data}{subsection.7.2}% 33

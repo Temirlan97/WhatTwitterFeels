@@ -1,5 +1,10 @@
 \begin{thebibliography}{10}
 
+\bibitem{vader}
+Eric~Gilbert C.J.Hutto.
+\newblock Vader: A parsimonious rule-based model for sentiment analysis of
+  social media text, 2014.
+
 \bibitem{related1}
 Jacob~Loennoe Evita~Stenqvist.
 \newblock Predicting bitcoin price fluctuation with twitter sentiment analysis,
@@ -30,10 +35,11 @@ Coinmarketcap.
 Coinmarketcap.
 \newblock https://coinmarketcap.com/, May 2018.
 
-\bibitem{vader}
-Eric~Gilbert C.J.Hutto.
-\newblock Vader: A parsimonious rule-based model for sentiment analysis of
-  social media text, 2014.
+\bibitem{whales}
+BTCMANAGER.
+\newblock
+  https://btcmanager.com/what-are-whales-how-do-they-affect-cryptocurrencies/,
+  January 2018.
 
 \bibitem{textprocessingfaq}
 Text-Processing.com FAQ.
@@ -74,5 +80,15 @@ Herbert Jaeger.
 \bibitem{numpy}
 Numpy~Python Library.
 \newblock http://www.numpy.org/, 2018.
+
+\bibitem{matplotlib}
+Matplotlib python library.
+\newblock https://matplotlib.org/, May 2018.
+
+\bibitem{cryptolexicon}
+Business Insider.
+\newblock
+  https://www.businessinsider.de/cryptocurrency-bitcoin-slang-explained-2018-4?r=us\&ir=t,
+  May 2018.
 
 \end{thebibliography}

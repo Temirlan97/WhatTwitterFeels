@@ -45,19 +45,19 @@ def getPartitionedInput(PhiRaw, pricesN, tweetsN):
 	Phi = []
 	factor = (tweetsN)/2.0
 	for row in PhiRaw:
-		Phi.append(row[:pricesN])
-		continue
-		# tweetScores = row[pricesN:]
-		# tweetScoreCounter = np.zeros(tweetsN, dtype=int)
-		# for score in tweetScores:
-		# 	idxForTweetScore = int((score + 1.0)*factor)
-		# 	if(score == 1):
-		# 		idxForTweetScore = tweetsN - 1
-		# 	tweetScoreCounter[idxForTweetScore] = tweetScoreCounter[idxForTweetScore] + 1
-		# tweetScorePartitions = np.zeros(tweetsN, dtype=float)
-		# for i in range(0, len(tweetScoreCounter)):
-		# 	tweetScorePartitions[i] = float(tweetScoreCounter[i]*100)/len(tweetScores)
-		# Phi.append(np.append(row[:pricesN], tweetScorePartitions))
+		# Phi.append(row[:pricesN])
+		# continue
+		tweetScores = row[pricesN:]
+		tweetScoreCounter = np.zeros(tweetsN, dtype=int)
+		for score in tweetScores:
+			idxForTweetScore = int((score + 1.0)*factor)
+			if(score == 1):
+				idxForTweetScore = tweetsN - 1
+			tweetScoreCounter[idxForTweetScore] = tweetScoreCounter[idxForTweetScore] + 1
+		tweetScorePartitions = np.zeros(tweetsN, dtype=float)
+		for i in range(0, len(tweetScoreCounter)):
+			tweetScorePartitions[i] = float(tweetScoreCounter[i]*100)/len(tweetScores)
+		Phi.append(np.append(row[:pricesN], tweetScorePartitions))
 		# Phi.append(tweetScorePartitions)
 	return np.array(Phi)
 
@@ -65,7 +65,8 @@ def getPartitionedInput(PhiRaw, pricesN, tweetsN):
 prefix = "data/Computed/Raw/"
 
 
-allPeriods = ["1m-1h","1h-1d","1h-7d","1d-7d"]
+# allPeriods = ["1m-1h","1h-1d","1h-7d","1d-7d"]
+allPeriods = ["1h-1d","1h-7d","1d-7d"]
 for intervalAndFrame in allPeriods:
 	PhiRaw = np.load(prefix + "input_" + intervalAndFrame + ".npy")
 	Z = np.load(prefix + "output_" + intervalAndFrame + ".npy")
@@ -77,10 +78,10 @@ for intervalAndFrame in allPeriods:
 	meanErrors = []
 	partitions = []
 	accuracies = []
-	prefixForCsv = prefix + "Results/Prices/"
+	prefixForCsv = prefix + "Results/PricesAndTweets/"
 	with open(prefixForCsv + "errors" + intervalAndFrame + ".csv", "w") as csvFile:
 		csvFile.write("tweetsN,mean_error,meanAccuracy")
-		for tweetsN in range(2, 3, 1):
+		for tweetsN in range(100000, 300000, 1000):
 			print("===========================================")
 			print("Computing tweetsN = " + str(tweetsN) + " ...")
 			Phi = getPartitionedInput(PhiRaw, pricesN, tweetsN)
